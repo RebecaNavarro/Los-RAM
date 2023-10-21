@@ -13,6 +13,8 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+
+
     <style name="TextViewSubTitulos">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/averiaseriflibre_bolditalic</item>
