@@ -76,7 +76,9 @@
         <item name="android:gravity">center</item>
     </style>
 
-
+    <style name="ImageViewAtras">
+        <item name="android:src">@drawable/atras</item>
+    </style>
 
 
 
