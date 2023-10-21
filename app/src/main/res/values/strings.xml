@@ -11,4 +11,10 @@
 
 
 
+    <string name="ubicacion_titulo">Ubicación</string>
+
+
+    <string name="olvido">olvidaste tu contraseña?</string>
+    <string name="o">-----------------o-----------------</string>
+    <string name="crear">Crear Cuenta</string>
 </resources>

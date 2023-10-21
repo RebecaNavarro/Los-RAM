@@ -15,11 +15,10 @@
         <activity
             android:name=".crearcuenta"
             android:exported="false" />
-        <activity
-            android:name=".crear_cuenta"
-            android:exported="false"
-            android:label="@string/title_activity_crear_cuenta"
-            android:theme="@style/Theme.LosRAM" />
+
+       <activity
+            android:name=".UbicacionesActivity"
+            android:exported="false" />
         <activity
             android:name=".PantallaCargaActivity"
             android:exported="false" />

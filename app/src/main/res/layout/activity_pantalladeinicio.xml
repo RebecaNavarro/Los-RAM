@@ -11,12 +11,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/averiaseriflibre_bold"
-        android:text="SuperChero"
-        android:textColor="#000000"
+        android:theme="@style/TextViewTitulos"
+        android:text="@string/app_name"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="86dp"></TextView>
+        tools:layout_editor_absoluteY="118dp"></TextView>
 
     <EditText
         android:id="@+id/textocorreootelefono"
@@ -24,7 +23,52 @@
         android:layout_height="wrap_content"
         android:hint="Correo o Telefono"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="238dp" />
+        tools:layout_editor_absoluteY="210dp" />
 
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="contraseña"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <Button
+        android:id="@+id/botondeinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/olvidemicontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olvido"
+        android:theme="@style/TextViewTextoNormal"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/o"
+        android:theme="@style/TextViewTextoNormal"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/crearcuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/crear"
+        android:theme="@style/TextViewTextoNormal"
+
+
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="553dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
