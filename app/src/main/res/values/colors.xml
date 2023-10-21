@@ -4,10 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="rojooscuro">#8B0000 </color>
     <color name="rosado">#FAC4BF</color>
-    <color name="beige">#F8F5E6</color>
-    <color name="plomo">#9A9A9A</color>
+    <color name="perla">#F8F5E6</color>
+    <color name="plomo">#BBBBBB</color>
     <color name="aqua">#AFF0DA</color>
-    <color name="amarillo">#E7D6A5</color>
-    <color name="mostaza">#CBA43F</color>
+    <color name="amarillo">#F8F581</color>
+    <color name="beige">#E7D6A5</color>
 
 </resources>
