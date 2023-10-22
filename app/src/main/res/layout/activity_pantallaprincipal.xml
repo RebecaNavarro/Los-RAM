@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaprincipal"
+    android:background="#F8F5E6">
+
+    <EditText
+        android:id="@+id/barradebusqueda"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Buscar productos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lupita"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        android:background="@drawable/lupa"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/iconousuario"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:background="@drawable/usuario"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="14dp" />
+
+    <ImageView
+        android:id="@+id/corazon"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corazon"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="14dp" />
+
+    <Button
+        android:id="@+id/botonHombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/man"
+        android:theme="@style/BotonesHombres"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/botonMujer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mujeres"
+        android:theme="@style/BotonesMujeres"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/botonninos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ninos"
+        android:theme="@style/BotonesNinhos"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/promos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/promos"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <TextView
+        android:id="@+id/tendencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tendencias"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

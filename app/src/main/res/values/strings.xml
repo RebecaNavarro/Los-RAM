@@ -6,4 +6,9 @@
     <string name="olvido">olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
     <string name="crear">Crear Cuenta</string>
+    <string name="man">Hombres</string>
+    <string name="mujeres">Mujeres</string>
+    <string name="ninos">Niñ@s</string>
+    <string name="promos">PROMOCIONES</string>
+    <string name="tendencias">TENDECIAS</string>
 </resources>
