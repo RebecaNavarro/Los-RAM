@@ -13,8 +13,9 @@
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
         <activity
-            android:name=".pantallaprincipal"
+            android:name=".Para_ellas_seccion"
             android:exported="false" />
+
         <activity
             android:name=".crear_cuenta"
             android:exported="false" />
