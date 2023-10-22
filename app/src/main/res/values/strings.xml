@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">SuperChero</string>
+    <string name="title_activity_crear_cuenta">crear_cuenta</string>
+    <string name="subtitulo_crear_cuenta">Llena tus datos y registrate :</string>
+    <string name="correo_o_tel">Ingresa tu correo o numero de telefono</string>
+    <string name="nombre_completo">Ingresa tu nombre completo</string>
+    <string name="nombre_usuario">Ingresa tu nuevo nombre de usuario</string>
+    <string name="contrasenha">Ingresa tu contrasenha nueva</string>
+    <string name="o_crear_cuenta">- o registrate con-</string>
+    <string name="enter">Enter</string>
+    <string name="para_ellas">Para ellas...</string>
+    <string name="pregunta_secciones">Que tipo de tienda buscas?</string>
+    <string name="Deportivo">Deportivo</string>
+    <string name="formal">Formal</string>
+    <string name="de_diario">De diario</string>
+    <string name="tropical">Tropical</string>
+    <string name="para_dormir">Para dormir</string>
+    <string name="ropa_interior">Ropa interior</string>
+    <string name="mas_populares">Mas populares:</string>
+
+
+
+
+
     <string name="ubicacion_titulo">Ubicación</string>
     <string name="tu_pedido">Tu Pedido</string>
     <string name="recibio">La tienda recibió tu pedido</string>
@@ -21,4 +43,12 @@
     <string name="comprobar">Comprobar</string>
     <string name="continuar_conel_pago">Continuar con el pago</string>
 
+    <string name="olvido">olvidaste tu contraseña?</string>
+    <string name="o">-----------------o-----------------</string>
+    <string name="crear">Crear Cuenta</string>
+    <string name="man">Hombres</string>
+    <string name="mujeres">Mujeres</string>
+    <string name="ninos">Niñ@s</string>
+    <string name="promos">PROMOCIONES</string>
+    <string name="tendencias">TENDECIAS</string>
 </resources>

@@ -11,9 +11,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/averiaseriflibre_bold"
-        android:text="SuperChero"
-        android:textColor="#000000"
+        android:theme="@style/TextViewTitulos"
+        android:text="@string/app_name"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="118dp"></TextView>
@@ -46,28 +45,27 @@
         android:id="@+id/olvidemicontraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="olvidate tu contraseña?"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:text="@string/olvido"
+        android:theme="@style/TextViewTextoNormal"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="445dp" />
 
     <TextView
         android:id="@+id/o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-----------------o-----------------"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="136dp"
+        android:text="@string/o"
+        android:theme="@style/TextViewTextoNormal"
+        tools:layout_editor_absoluteX="117dp"
         tools:layout_editor_absoluteY="488dp" />
 
     <TextView
         android:id="@+id/crearcuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear Cuenta"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="550dp" />
+        android:text="@string/crear"
+        android:theme="@style/TextViewTextoNormal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="553dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
