@@ -63,11 +63,8 @@
         android:id="@+id/crearcuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="@string/crear"
         android:theme="@style/TextViewTextoNormal"
-
-
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="553dp" />
 

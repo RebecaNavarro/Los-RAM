@@ -15,8 +15,9 @@
         <activity
             android:name=".Para_ellas_seccion"
             android:exported="false" />
+
         <activity
-            android:name=".crearcuenta"
+            android:name=".crear_cuenta"
             android:exported="false" />
         <activity
             android:name=".UbicacionesActivity"
