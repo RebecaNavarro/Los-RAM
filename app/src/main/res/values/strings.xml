@@ -19,9 +19,6 @@
     <string name="mas_populares">Mas populares:</string>
 
 
-
-
-
     <string name="ubicacion_titulo">Ubicación</string>
     <string name="tu_pedido">Tu Pedido</string>
     <string name="recibio">La tienda recibió tu pedido</string>
@@ -51,4 +48,5 @@
     <string name="ninos">Niñ@s</string>
     <string name="promos">PROMOCIONES</string>
     <string name="tendencias">TENDECIAS</string>
+    <string name="favoritos">Mis Favoritos</string>
 </resources>

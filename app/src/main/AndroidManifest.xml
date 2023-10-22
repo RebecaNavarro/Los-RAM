@@ -13,9 +13,11 @@
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
         <activity
+            android:name=".favoritos"
+            android:exported="false" />
+        <activity
             android:name=".Para_ellas_seccion"
             android:exported="false" />
-
         <activity
             android:name=".PagoTarjetaActivity"
             android:exported="false" />
