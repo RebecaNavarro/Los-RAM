@@ -8,6 +8,18 @@
     <string name="contrasenha">Ingresa tu contrasenha nueva</string>
     <string name="o_crear_cuenta">- o registrate con-</string>
     <string name="enter">Enter</string>
+    <string name="para_ellas">Para ellas...</string>
+    <string name="pregunta_secciones">Que tipo de tienda buscas?</string>
+    <string name="Deportivo">Deportivo</string>
+    <string name="formal">Formal</string>
+    <string name="de_diario">De diario</string>
+    <string name="tropical">Tropical</string>
+    <string name="para_dormir">Para dormir</string>
+    <string name="ropa_interior">Ropa interior</string>
+    <string name="mas_populares">Mas populares:</string>
+
+
+
 
 
     <string name="ubicacion_titulo">Ubicación</string>

@@ -7,4 +7,133 @@
     tools:context=".Para_ellas_seccion"
     android:background="@color/perla">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/atras"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ubicacion_pin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/para_ellas_seccion"
+        android:theme="@style/TextViewTitulos"
+        android:text="@string/para_ellas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="56dp"
+></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pregunta_seccion_mujeres"
+        android:theme="@style/TextViewSubTitulos"
+        android:text="@string/pregunta_secciones"
+        app:layout_constraintTop_toBottomOf="@+id/para_ellas_seccion"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+
+        ></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_deportivo_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/Deportivo"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta_seccion_mujeres"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_formal_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/formal"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta_seccion_mujeres"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toRightOf="@+id/boton_deportivo_m"
+        android:layout_marginLeft="16dp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_de_diario_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/Deportivo"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta_seccion_mujeres"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toRightOf="@+id/boton_formal_m"
+        android:layout_marginLeft="16dp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_para_dormir_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/para_dormir"
+        app:layout_constraintTop_toBottomOf="@+id/boton_deportivo_m"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_ropa_interior_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/ropa_interior"
+        app:layout_constraintTop_toBottomOf="@+id/boton_deportivo_m"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/boton_para_dormir_m"
+        android:layout_marginLeft="8dp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_tropical_m"
+        android:theme="@style/BotonesMujeres"
+        android:text="@string/tropical"
+        app:layout_constraintTop_toBottomOf="@+id/boton_deportivo_m"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/para_ellas_seccion"
+        android:layout_marginLeft="8dp"
+        ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextViewSubTitulos"
+        android:text="@string/mas_populares"
+        app:layout_constraintTop_toBottomOf="@+id/boton_para_dormir_m"
+        android:layout_marginTop="32dp"
+
+        ></TextView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
