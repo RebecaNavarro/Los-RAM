@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/perla"
+    tools:context=".EstadoPedidoDeliveryActivity">
+
+    <TextView
+        android:id="@+id/titulo_tu_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tu_pedido"
+        android:theme="@style/TextViewTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+    />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery"
+        android:theme="@style/TextViewTextoNormal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_tu_pedido"
+    />
+
+    <TextView
+        android:id="@+id/tienda_recibio_pedido_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recibio"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_tu_pedido"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/asignar_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asignar_delivery"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tienda_recibio_pedido_del"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/alistando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alistando"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/asignar_delivery"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/envio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/envio"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alistando"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/en_camino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/en_camino"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/envio"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="24dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

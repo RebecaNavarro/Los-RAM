@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">SuperChero</string>
     <string name="ubicacion_titulo">Ubicación</string>
-
+    <string name="tu_pedido">Tu Pedido</string>
+    <string name="recibio">La tienda recibió tu pedido</string>
+    <string name="asignar_delivery">Asignando a un delivery</string>
+    <string name="alistando">La tienda está alistando tu pedido</string>
+    <string name="envio">La tienda ya envió el pedido</string>
+    <string name="en_camino">El delivery está en camino</string>
+    <string name="te_esperan">La tienda te está esperando</string>
+    <string name="llego">Pedido realizado</string>
+    <string name="delivery">Delivery</string>
+    <string name="retiro">Retiro</string>
+    <string name="gracias">¡Gracias por tu preferencia!</string>
+    <string name="puntuar">¿Cómo puntuas la tienda?</string>
+    <string name="tarjetas">Tarjeta</string>
+    <string name="banco">Banco</string>
+    <string name="nombre">Nombre completo</string>
+    <string name="num_tarjeta">Número de tarjeta</string>
+    <string name="codigo_seguridad">Código de seguridad</string>
+    <string name="comprobar">Comprobar</string>
+    <string name="continuar_conel_pago">Continuar con el pago</string>
 
 </resources>
