@@ -84,70 +84,19 @@
 
         />
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/o_crearcuenta"
-          android:theme="@style/TextViewTextoNormal"
-          android:text="@string/o_crear_cuenta"
-          app:layout_constraintTop_toBottomOf="@+id/contrasenha_crear_cuenta"
-          app:layout_constraintLeft_toLeftOf="parent"
-          app:layout_constraintRight_toRightOf="parent"
-          android:layout_marginTop="32dp"
-          >
 
-      </TextView>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/twitter"
-        android:src="@drawable/twitter"
-        app:layout_constraintTop_toBottomOf="@+id/o_crearcuenta"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="40dp"
-        >
-
-    </ImageView>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/facebook"
-        android:src="@drawable/facebook_contorno"
-        app:layout_constraintTop_toBottomOf="@+id/o_crearcuenta"
-        app:layout_constraintLeft_toRightOf="@+id/twitter"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="40dp"
-        >
-
-    </ImageView>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/google_logo"
-        android:src="@drawable/google_logo"
-        app:layout_constraintTop_toBottomOf="@+id/o_crearcuenta"
-        app:layout_constraintRight_toLeftOf="@+id/twitter"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="40dp"
-        >
-
-    </ImageView>
 
 
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:theme="@style/BotonesMujeres"
-        app:layout_constraintTop_toBottomOf="@+id/twitter"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contrasenha_crear_cuenta"
         android:layout_marginTop="48dp"
         android:text="@string/enter"
-        >
+        />
 
     </Button>
 
