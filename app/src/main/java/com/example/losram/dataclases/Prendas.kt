@@ -6,4 +6,5 @@ data class Prendas(
     val precio:Int,
     val imagenPrenda:Int,
     val tipoDePrenda:String
+    //mas vendidos
 )

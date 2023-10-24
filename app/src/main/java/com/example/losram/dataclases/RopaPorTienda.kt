@@ -7,4 +7,5 @@ data class RopaPorTienda(
     val imagen: Int,
     val favoritos:Boolean,
     val tipoDePrenda:String//de tipo prenda
+    //boorrar
 )

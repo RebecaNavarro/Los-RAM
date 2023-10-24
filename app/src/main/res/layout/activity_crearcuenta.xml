@@ -97,7 +97,6 @@
         android:layout_marginTop="48dp"
         android:text="@string/enter"
         />
-
-    </Button>
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
