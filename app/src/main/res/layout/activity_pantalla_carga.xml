@@ -7,6 +7,7 @@
     tools:context=".PantallaCargaActivity">
 
     <ImageView
+        android:id="@+id/fondo_super_chero"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/pantalladecarga"

@@ -11,27 +11,36 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/titulo"
         android:theme="@style/TextViewTitulos"
         android:text="@string/app_name"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="118dp"></TextView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="76dp"
+        ></TextView>
 
     <EditText
         android:id="@+id/textocorreootelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Correo o Telefono"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:hint="@string/correo_o_tel"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp"
+        />
 
     <EditText
         android:id="@+id/contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="contraseña"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="274dp" />
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/textocorreootelefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="46dp" />
 
     <Button
         android:id="@+id/botondeinicio"
@@ -39,26 +48,30 @@
         android:layout_height="wrap_content"
         android:text="Iniciar"
         android:theme="@style/BotonesFuncionales"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintTop_toBottomOf="@id/contrasena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp" />
 
     <TextView
         android:id="@+id/olvidemicontraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/olvido"
-        android:theme="@style/TextViewTextoNormal"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintTop_toBottomOf="@id/botondeinicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp" />
 
     <TextView
         android:id="@+id/o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/o"
-        android:theme="@style/TextViewTextoNormal"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="488dp" />
+        app:layout_constraintTop_toBottomOf="@id/olvidemicontraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp" />
 
     <TextView
         android:id="@+id/crearcuenta"
@@ -66,7 +79,9 @@
         android:layout_height="wrap_content"
         android:text="@string/crear"
         android:theme="@style/TextViewTextoNormal"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="553dp" />
+        app:layout_constraintTop_toBottomOf="@id/o"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

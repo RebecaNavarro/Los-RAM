@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PantallaDeInicioActivity"
+            android:name=".pantalladeinicio$PantallaDeInicioActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

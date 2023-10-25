@@ -49,12 +49,14 @@
             android:id="@+id/nombreCompleto_usuario_crear_cuenta"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:hint="@string/nombre_usuario"
             android:theme="@style/EditTextDatos"
             android:layout_marginLeft="16dp"
+
             android:layout_marginTop="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/correoOnumTel_crear_cuenta"
-            android:hint="@string/correo_o_tel"
+
 
             />
 
@@ -75,6 +77,7 @@
         android:id="@+id/contrasenha_crear_cuenta"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:theme="@style/EditTextDatos"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
