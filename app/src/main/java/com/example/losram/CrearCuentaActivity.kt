@@ -12,30 +12,40 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class CrearCuentaActivity : AppCompatActivity() {
-class crearcuenta : AppCompatActivity() {
 
     private lateinit var binding:ActivityCrearcuentaBinding
     private lateinit var auth: FirebaseAuth
+    private lateinit var button: Button
 
     val context: Context = this
     val activity: Activity = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityCrearcuentaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_crearcuenta)
         auth = Firebase.auth
-        binding.botonenter.setOnClickListener{
+
+        button = findViewById(R.id.botonenter)
+
+        button.setOnClickListener{
             clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
         }
+
+//        binding=ActivityCrearcuentaBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//        auth = Firebase.auth
+//        binding.botonenter.setOnClickListener{
+//            clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
+//        }
 
 
     }
 
     fun clickCrearCuenta(email:String, contrasena:String){//cuando llenamos la contraseña y email
-        auth.createUserWithEmailAndPassword(email,contrasena).addOnCompleteListener(this) { task ->
+        auth.createUserWithEmailAndPassword(email,contrasena)
+            .addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
-                val intent: Intent = Intent(context, pantalladeinicio::class.java)
+                val intent: Intent = Intent(context, PantallaDeInicioActivity::class.java)
                 startActivity(intent)
             } else {}
         }

@@ -2,13 +2,13 @@
     <string name="app_name">SuperChero</string>
     <string name="title_activity_crear_cuenta">crear_cuenta</string>
     <string name="subtitulo_crear_cuenta">Llena tus datos y registrate :</string>
-    <string name="correo_o_tel">Ingresa tu correo o numero de telefono</string>
+    <string name="correo_o_tel">Ingresa tu correo</string>
     <string name="nombre_completo">Ingresa tu nombre completo</string>
     <string name="nombre_usuario">Ingresa tu nuevo nombre de usuario</string>
-    <string name="contrasenha">Ingresa tu contrasenha nueva</string>
+    <string name="contrasenha">Ingresa tu contraseña nueva</string>
     <string name="o_crear_cuenta">- o registrate con-</string>
     <string name="enter">Enter</string>
-    <string name="para_ellas">Para ellas...</string>
+    <string name="para_ellas">Para ellas</string>
     <string name="pregunta_secciones">Que tipo de tienda buscas?</string>
     <string name="Deportivo">Deportivo</string>
     <string name="formal">Formal</string>
@@ -32,7 +32,7 @@
     <string name="comprobar">Comprobar</string>
     <string name="continuar_conel_pago">Continuar con el pago</string>
 
-    <string name="olvido">olvidaste tu contraseña?</string>
+    <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
     <string name="crear">Crear Cuenta</string>
     <string name="man">Hombres</string>
@@ -42,10 +42,7 @@
     <string name="tendencias">TENDECIAS</string>
     <string name="favoritos">Mis Favoritos</string>
     <string name="info">Informacion</string>
-    <string name="infonombre">Nombre: Rebeca</string>
-    <string name="infoapellido">Apellido: Navarro</string>
     <string name="infotarjetas">Tarjetas Guardadas:</string>
-    <string name="infonumerotar">4049 **** **** **** visa</string>
     <string name="infofavoritos">Mis Favoritos</string>
     <string name="close">Cerrar Sesion</string>
 </resources>
