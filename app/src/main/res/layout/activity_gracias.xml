@@ -8,16 +8,16 @@
     tools:context=".GraciasActivity">
 
     <TextView
-        android:id="@+id/llego"
+        android:id="@+id/realizado"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/llego"
+        android:text="@string/realizado"
         android:textAlignment="center"
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/gracias"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="132dp"
     />
 
     <TextView
@@ -27,13 +27,14 @@
         android:text="@string/gracias"
         android:textAlignment="center"
         android:theme="@style/TextViewTitulos"
+        app:layout_constraintTop_toBottomOf="@id/realizado"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="8dp"
     />
 
     <ImageView
+        android:id="@+id/bolsa"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/bolsas_de_tienda"
@@ -42,5 +43,79 @@
         app:layout_constraintRight_toRightOf="parent"
         android:paddingTop="32dp"
     />
+
+    <TextView
+        android:id="@+id/puntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puntuar"
+        android:textAlignment="center"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bolsa"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="40dp"
+        android:paddingBottom="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        app:layout_constraintRight_toLeftOf="@id/star2"
+        />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        app:layout_constraintRight_toLeftOf="@id/star3"
+        />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        app:layout_constraintLeft_toRightOf="@id/star3"
+        />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        app:layout_constraintLeft_toRightOf="@id/star4"
+        />
+
+    <TextView
+        android:id="@+id/omitir"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/omitir"
+        android:textAlignment="center"
+        android:theme="@style/TextViewTextoNormal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/star5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="4dp"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

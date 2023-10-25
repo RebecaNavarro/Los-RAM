@@ -5,5 +5,6 @@ data class Carrito(
     val descripcion:String,
     val cantidad:Int,
     val precio: Int,
-    var pagoTotal: Int
+    var pagoTotal: Int,
+    //con ayuda de los activity
 )

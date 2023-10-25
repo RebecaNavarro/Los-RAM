@@ -88,9 +88,10 @@
 
 
     <Button
+        android:id="@+id/botonenter"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:theme="@style/BotonesMujeres"
+        android:theme="@style/BotonesFuncionales"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/contrasenha_crear_cuenta"

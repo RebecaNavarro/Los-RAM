@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,9 @@
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
         <activity
+            android:name=".PrendaActivity"
+            android:exported="false" />
+        <activity
             android:name=".favoritos"
             android:exported="false" />
         <activity
@@ -21,15 +26,11 @@
         <activity
             android:name=".PagoTarjetaActivity"
             android:exported="false" />
-        <activity
-            android:name=".PuntuacionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".GraciasActivity"
             android:exported="false" />
-        <activity
-            android:name=".EstadoPedidoDeliveryActivity"
-            android:exported="false" />
+
         <activity
             android:name=".crearcuenta"
             android:exported="false" />
@@ -38,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".PantallaCargaActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,8 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
     </application>
 
 </manifest>

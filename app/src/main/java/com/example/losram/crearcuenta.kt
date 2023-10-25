@@ -1,11 +1,46 @@
 package com.example.losram
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import com.example.losram.databinding.ActivityCrearcuentaBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class crearcuenta : AppCompatActivity() {
+
+    private lateinit var binding:ActivityCrearcuentaBinding
+    private lateinit var auth: FirebaseAuth
+
+    val context: Context = this
+    val activity: Activity = this
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crearcuenta)
+        binding=ActivityCrearcuentaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        auth = Firebase.auth
+        binding.botonenter.setOnClickListener{
+            clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
+        }
+
+
     }
+
+    fun clickCrearCuenta(email:String, contrasena:String){//cuando llenamos la contraseña y email
+        auth.createUserWithEmailAndPassword(email,contrasena).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                val intent: Intent = Intent(context, pantalladeinicio::class.java)
+                startActivity(intent)
+            } else {}
+        }
+
+    }
+
+
+
 }
