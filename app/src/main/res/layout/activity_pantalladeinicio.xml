@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="118dp"></TextView>
 
     <EditText
-        android:id="@+id/textocorreootelefono"
+        android:id="@+id/text_ocorreootelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Correo o Telefono"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="@string/crear"
         android:theme="@style/TextViewTextoNormal"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="553dp" />
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
