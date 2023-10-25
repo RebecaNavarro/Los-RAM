@@ -3,10 +3,11 @@ package com.example.losram
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.media.Image
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+
 
 
 class PantallaCargaActivity : AppCompatActivity() {
