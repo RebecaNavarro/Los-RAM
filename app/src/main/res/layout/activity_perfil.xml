@@ -27,7 +27,7 @@
         android:id="@+id/infonombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/infonombre"
+        android:text=""
         android:theme="@style/TextViewSubTitulos"
         tools:layout_editor_absoluteX="70dp"
         tools:layout_editor_absoluteY="224dp" />
@@ -36,7 +36,7 @@
         android:id="@+id/infoapellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/infoapellido"
+        android:text=""
         android:theme="@style/TextViewSubTitulos"
         tools:layout_editor_absoluteX="70dp"
         tools:layout_editor_absoluteY="294dp" />
@@ -54,7 +54,7 @@
         android:id="@+id/numerotarjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/infonumerotar"
+        android:text=""
         android:theme="@style/TextViewSubTitulos"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="440dp" />

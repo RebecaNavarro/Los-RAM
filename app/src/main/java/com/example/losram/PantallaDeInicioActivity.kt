@@ -17,6 +17,7 @@ class PantallaDeInicioActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPantalladeinicioBinding
     private lateinit var auth: FirebaseAuth
     lateinit var textView: TextView
+    lateinit var button: Button
 
     val context: Context = this
     val activity: Activity = this
@@ -30,6 +31,12 @@ class PantallaDeInicioActivity : AppCompatActivity() {
         textView.setOnClickListener{
             val intent: Intent = Intent(context, CrearCuentaActivity::class.java)
             startActivity(intent)
+        }
+
+        button = findViewById(R.id.botonenter)
+
+        button.setOnClickListener{
+            loginUser(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
         }
 
 
