@@ -50,4 +50,10 @@
     <string name="tendencias">TENDECIAS</string>
     <string name="favoritos">Mis Favoritos</string>
     <string name="info">Informacion</string>
+    <string name="infonombre">Nombre: Rebeca</string>
+    <string name="infoapellido">Apellido: Navarro</string>
+    <string name="infotarjetas">Tarjetas Guardadas:</string>
+    <string name="infonumerotar">4049 **** **** **** visa</string>
+    <string name="infofavoritos">Mis Favoritos</string>
+    <string name="close">Cerrar Sesion</string>
 </resources>

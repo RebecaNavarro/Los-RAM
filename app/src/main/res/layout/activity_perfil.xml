@@ -24,13 +24,57 @@
         tools:layout_editor_absoluteY="68dp" />
 
     <TextView
-        android:id="@+id/info"
+        android:id="@+id/infonombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/info"
-        android:theme="@style/TextViewTitulos"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="222dp" />
+        android:text="@string/infonombre"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/infoapellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoapellido"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/infotarjetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infotarjetas"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <TextView
+        android:id="@+id/numerotarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infonumerotar"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infofavoritos"
+        android:theme="@style/TextViewSubTitulos"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <Button
+        android:id="@+id/cerrarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="578dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
