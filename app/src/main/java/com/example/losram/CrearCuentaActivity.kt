@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+class CrearCuentaActivity : AppCompatActivity() {
 class crearcuenta : AppCompatActivity() {
 
     private lateinit var binding:ActivityCrearcuentaBinding

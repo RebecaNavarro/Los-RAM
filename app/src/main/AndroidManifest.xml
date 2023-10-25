@@ -18,7 +18,10 @@
             android:name=".PrendaActivity"
             android:exported="false" />
         <activity
-            android:name=".favoritos"
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoritosActivity"
             android:exported="false" />
         <activity
             android:name=".Para_ellas_seccion"
@@ -32,7 +35,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".crearcuenta"
+            android:name=".CrearCuentaActivity"
             android:exported="false" />
         <activity
             android:name=".UbicacionesActivity"
@@ -47,7 +50,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".pantalladeinicio"
+            android:name=".PantallaDeInicioActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

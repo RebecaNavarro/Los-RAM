@@ -16,6 +16,7 @@ class pantalladeinicio : AppCompatActivity() {
 
     val context: Context = this
     val activity: Activity = this
+class PantallaDeInicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalladeinicio)
