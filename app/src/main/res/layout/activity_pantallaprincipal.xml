@@ -50,8 +50,10 @@
         android:layout_height="wrap_content"
         android:text="@string/man"
         android:theme="@style/BotonesHombres"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <Button
         android:id="@+id/botonMujer"
@@ -59,8 +61,11 @@
         android:layout_height="wrap_content"
         android:text="@string/mujeres"
         android:theme="@style/BotonesMujeres"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
     <Button
         android:id="@+id/botonninos"
@@ -68,8 +73,10 @@
         android:layout_height="wrap_content"
         android:text="@string/ninos"
         android:theme="@style/BotonesNinhos"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="290dp" />
 
     <TextView
         android:id="@+id/promos"
@@ -77,8 +84,10 @@
         android:layout_height="wrap_content"
         android:text="@string/promos"
         android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
 
     <TextView
         android:id="@+id/tendencias"
@@ -86,8 +95,9 @@
         android:layout_height="wrap_content"
         android:text="@string/tendencias"
         android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintTop_toBottomOf="@+id/promos"
+        android:layout_marginTop="250dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
