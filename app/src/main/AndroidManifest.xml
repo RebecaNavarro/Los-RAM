@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerViewTiendasActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrendaActivity"
             android:exported="false" />
         <activity

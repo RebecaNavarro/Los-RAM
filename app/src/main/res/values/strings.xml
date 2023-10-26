@@ -45,4 +45,6 @@
     <string name="infotarjetas">Tarjetas Guardadas:</string>
     <string name="infofavoritos">Mis Favoritos</string>
     <string name="close">Cerrar Sesion</string>
+    <string name="adquiere_el_tuyo">Adquiere el tuyo</string>
+
 </resources>

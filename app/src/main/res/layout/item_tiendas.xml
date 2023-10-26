@@ -34,33 +34,36 @@
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="32dp"
+                android:id="@+id/TextViewNombreTienda"
                 android:layout_weight="1"
-                android:text="Nombre prenda"
+                android:text="Nombre Tienda"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-            />
+                />
 
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="32dp"
+                android:id="@+id/TextViewDireccion"
                 android:layout_weight="1"
-                android:text="Precio"
+                android:text="Direccion"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-            />
+                />
 
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="32dp"
+                android:id="@+id/TextViewAbiertoCerrado"
                 android:layout_weight="1"
-                android:text="Disponible"
+                android:text="Abierto/Cerrado"
 
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-            />
+                />
 
 
 

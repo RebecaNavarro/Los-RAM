@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/perla">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/fondo_mas_populares"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+
+
+        >
+    </View>
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="360dp"
+        android:id="@+id/imagen_mas_populares"
+        app:layout_constraintTop_toTopOf="@+id/fondo_mas_populares"
+        app:layout_constraintLeft_toLeftOf="@+id/fondo_mas_populares"
+        app:layout_constraintRight_toRightOf="@+id/fondo_mas_populares"
+        android:src="@color/black">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_tienda_mas_populares"
+        app:layout_constraintTop_toBottomOf="@id/imagen_mas_populares"
+        android:theme="@style/TextViewSubTitulos"
+        app:layout_constraintLeft_toLeftOf="@+id/fondo_mas_populares"
+        android:layout_margin="8dp"
+        android:text="Nombre_de_tienda">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_prenda_mas_buscados"
+        app:layout_constraintTop_toBottomOf="@id/nombre_tienda_mas_populares"
+        android:theme="@style/TextViewTextoNormal"
+        app:layout_constraintLeft_toLeftOf="@+id/fondo_mas_populares"
+        android:layout_margin="8dp"
+        android:text="Nombre prenda">
+    </TextView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/corazon_mas_populares"
+        android:src="@drawable/corazon"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_mas_populares"
+        app:layout_constraintRight_toRightOf="@id/fondo_mas_populares"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="64dp"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likes_mas_populares"
+        app:layout_constraintLeft_toRightOf="@+id/corazon_mas_populares"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_mas_populares"
+        android:theme="@style/TextViewTextoNormal"
+        android:text="122"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="8dp"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_prenda_mas_buscados"
+        app:layout_constraintLeft_toLeftOf="@id/fondo_mas_populares"
+        app:layout_constraintRight_toRightOf="@id/fondo_mas_populares"
+        android:theme="@style/BotonesFuncionales"
+        android:layout_marginTop="16dp"
+        android:text="@string/adquiere_el_tuyo"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
