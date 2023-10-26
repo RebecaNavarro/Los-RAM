@@ -34,22 +34,25 @@
             android:exported="false" />
         <activity
             android:name=".CrearCuentaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UbicacionesActivity"
             android:exported="false" />
         <activity
             android:name=".PantallaCargaActivity"
-            android:exported="true">
+            android:exported="true"/>
+
+        <activity
+            android:name=".PantallaDeInicioActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".pantalladeinicio$PantallaDeInicioActivity"
-            android:exported="false" />
+            android:name=".PantallaPrincipalActivivy"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="false" />

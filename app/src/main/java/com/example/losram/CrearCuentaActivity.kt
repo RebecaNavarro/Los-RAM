@@ -22,21 +22,12 @@ class CrearCuentaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crearcuenta)
+        binding=ActivityCrearcuentaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         auth = Firebase.auth
-
-        button = findViewById(R.id.botonenter)
-
-        button.setOnClickListener{
+        binding.botonenter.setOnClickListener{
             clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
         }
-
-//        binding=ActivityCrearcuentaBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//        auth = Firebase.auth
-//        binding.botonenter.setOnClickListener{
-//            clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
-//        }
 
 
     }
