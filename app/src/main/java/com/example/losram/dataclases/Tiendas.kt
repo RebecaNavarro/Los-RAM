@@ -8,3 +8,4 @@ data class Tiendas(
     val estadoDeTienda:String,
     val tipo: String
 )
+
