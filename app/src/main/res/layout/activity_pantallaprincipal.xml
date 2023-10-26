@@ -106,6 +106,48 @@
         android:layout_marginTop="250dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tendencias"
+        android:layout_marginTop="150dp">
+        
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/icoonoperfil"
+            android:layout_marginLeft="180dp"
+
+            />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/iconoubicacion"
+            android:layout_marginLeft="70dp"
+            />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/corazoon"
+            android:layout_marginLeft="300dp"
+            />
 
 
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
