@@ -9,7 +9,7 @@ import com.example.losram.fragment.MapaFragment
 
 class UbicacionesActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityUbicacionesBinding
+    private lateinit var binding : ActivityUbicacionesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityUbicacionesBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -20,9 +20,7 @@ class UbicacionesActivity : AppCompatActivity() {
             setReorderingAllowed(true)
             addToBackStack("replacement")
         }
-        setContentView(R.layout.activity_ubicaciones)
-        binding = ActivityUbicacionesBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
 //        val fragment = MapsFragment()
 //        supportFragmentManager.commit {
 //            replace((binding.mapsFragment.id,fragment))

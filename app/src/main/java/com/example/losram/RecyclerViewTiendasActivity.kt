@@ -192,6 +192,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             imagenPrenda = 17
         )
 
+
 // tiendas.add(clementine)
         tiendasAdapter.addTiendas(tiendas)
         binding.recyclerTiendas.apply {
