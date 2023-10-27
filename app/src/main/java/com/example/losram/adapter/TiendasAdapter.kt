@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.losram.Nombre_secciones
 import com.example.losram.databinding.ItemTiendasBinding
 import com.example.losram.dataclases.Tiendas
 
@@ -45,9 +46,8 @@ class TiendasAdapter :
 
             }
 
-    fun addTiendas(newlistaGafetes: List<Tiendas>) {
+    fun addTiendas(newlistaTiendas: List<Tiendas>) {
 
-        listatiendas.clear()
-        listatiendas.addAll(newlistaGafetes)
+listatiendas.size
     }
 }
