@@ -1,88 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/perla"
-    tools:context=".PrendaActivity"
-    android:orientation="vertical">
+    tools:context=".PrendaActivity">
 
-
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:theme="@style/ImageViewAtras"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="24dp"
-                />
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_example"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="330dp"
-                    android:layout_weight="1"
-                    android:background="@color/perla"
-                    android:gravity="center"/>
-
-
-                <ImageView
-                    android:id="@+id/prenda"
-                    android:layout_width="250dp"
-                    android:layout_height="330dp"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                     />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="330dp"
-                    android:layout_weight="1"
-                    android:background="@color/perla"
-                    android:gravity="center"
-                    />
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:listitem="@layout/item" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="hknj"
-                />
+                android:text="Holaaatyfghjjkiiftd"
+                android:textSize="32dp"
+                android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_example2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:listitem="@layout/item_gafete" />
 
         </LinearLayout>
 
+    </androidx.core.widget.NestedScrollView>
 
 
-    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-</LinearLayout>

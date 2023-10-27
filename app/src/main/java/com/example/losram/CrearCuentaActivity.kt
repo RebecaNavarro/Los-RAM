@@ -29,6 +29,10 @@ class CrearCuentaActivity : AppCompatActivity() {
             clickCrearCuenta(binding.correoOnumTelCrearCuenta.text.toString(),binding.contrasenhaCrearCuenta.text.toString() )
         }
 
+        binding.botonatras.setOnClickListener {
+            val intent3: Intent = Intent(context, PantallaDeInicioActivity::class.java)
+            startActivity(intent3)
+        }
 
     }
 

@@ -20,6 +20,7 @@
          />
 
     <ImageView
+        android:id="@+id/botonatras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/atras"
