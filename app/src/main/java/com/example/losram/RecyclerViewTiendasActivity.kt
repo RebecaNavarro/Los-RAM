@@ -20,15 +20,15 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
     }
 
     fun iniciarRecyclerView() {
-        val tiendas = mutableListOf<Tiendas>()
 
+val tiendas = mutableListOf<Tiendas>()
         val clementine = Tiendas(
             nombreTienda = "Clementine",
             direccion = "Calle 18 de calacoto",
             puntuacionTienda = 4.3,
             estadoDeTienda = "14:00 a 18:00",
             tipo = listOf(Nombre_secciones.FORMAL),
-            imagenPrenda = 1
+            imagenPrenda = R.drawable.clementine_logo
         )
         val mango = Tiendas(
             nombreTienda = "MANGO",
@@ -36,7 +36,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.5,
             estadoDeTienda = "14:00 a 19:00",
             tipo = listOf(Nombre_secciones.FORMAL,Nombre_secciones.DE_DIARIO),
-            imagenPrenda = 2
+            imagenPrenda = R.drawable.mango_logo
         )
 
         val face_boutique = Tiendas(
@@ -45,7 +45,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.7,
             estadoDeTienda = "15:00 a 18:00",
             tipo = listOf(Nombre_secciones.FORMAL),
-            imagenPrenda = 3
+            imagenPrenda = R.drawable.face_logo
         )
 
         val vickys_casual = Tiendas(
@@ -54,7 +54,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.4,
             estadoDeTienda = "14:00 a 17:00",
             tipo = listOf(Nombre_secciones.FORMAL,Nombre_secciones.DE_DIARIO),
-            imagenPrenda = 4
+            imagenPrenda = R.drawable.vickys_casual
         )
 
         val benneton = Tiendas(
@@ -63,7 +63,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.5,
             estadoDeTienda = "13:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL,Nombre_secciones.ROPA_INTERIOR),
-            imagenPrenda = 5
+            imagenPrenda = R.drawable.benetton_logo
         )
 
         val big_Sur = Tiendas(
@@ -72,7 +72,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.5,
             estadoDeTienda = "08:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL,Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.PARA_DORMIR,Nombre_secciones.TROPICAL,Nombre_secciones.DEPORTIVO),
-            imagenPrenda = 6
+            imagenPrenda = R.drawable.big_sur_logo
         )
 
         val hering = Tiendas(
@@ -81,7 +81,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.8,
             estadoDeTienda = "15:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL,Nombre_secciones.ROPA_INTERIOR, Nombre_secciones.PARA_DORMIR),
-            imagenPrenda = 7
+            imagenPrenda = R.drawable.hering_logo
         )
 
         val somos = Tiendas(
@@ -90,7 +90,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.6,
             estadoDeTienda = "16:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL),
-            imagenPrenda = 8
+            imagenPrenda = R.drawable.somos_logo
         )
 
         val whapa = Tiendas(
@@ -99,7 +99,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.2,
             estadoDeTienda = "!3:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL),
-            imagenPrenda = 9
+            imagenPrenda = R.drawable.whapa_logo
         )
 
         val e_y_e = Tiendas(
@@ -108,7 +108,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.2,
             estadoDeTienda = "12:00 a 21:00",
             tipo = listOf(Nombre_secciones.PARA_DORMIR,Nombre_secciones.DEPORTIVO,Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.TROPICAL),
-            imagenPrenda = 10
+            imagenPrenda = R.drawable.e_y_e_logo
         )
 
         val levis = Tiendas(
@@ -117,7 +117,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.7,
             estadoDeTienda = "12:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO),
-            imagenPrenda = 11
+            imagenPrenda = R.drawable.levis_logo
         )
 
         val yuth = Tiendas(
@@ -126,7 +126,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.8,
             estadoDeTienda = "12:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO),
-            imagenPrenda = 12
+            imagenPrenda = R.drawable.yuth_logo
         )
 
         val fair_play = Tiendas(
@@ -135,7 +135,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.6,
             estadoDeTienda = "14:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO),
-            imagenPrenda = 13
+            imagenPrenda = R.drawable.fair_play_logo
         )
 
         val solmania = Tiendas(
@@ -144,7 +144,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.1,
             estadoDeTienda = "14:00 a 22:00",
             tipo = listOf(Nombre_secciones.TROPICAL),
-            imagenPrenda = 14
+            imagenPrenda = R.drawable.solmania_logo
         )
 
         val women_secret = Tiendas(
@@ -153,7 +153,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.9,
             estadoDeTienda = "15:00 a 21:00",
             tipo = listOf(Nombre_secciones.TROPICAL,Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.PARA_DORMIR),
-            imagenPrenda = 15
+            imagenPrenda = R.drawable.women_secret
         )
 
         val lupo = Tiendas(
@@ -162,7 +162,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.6,
             estadoDeTienda = "14:00 a 20:00",
             tipo = listOf(Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.DEPORTIVO,),
-            imagenPrenda = 16
+            imagenPrenda = R.drawable.lupo_logo
         )
 
         val textilon = Tiendas(
@@ -171,7 +171,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.5,
             estadoDeTienda = "10:00 a 21:00",
             tipo = listOf(Nombre_secciones.PARA_DORMIR,Nombre_secciones.DEPORTIVO,Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.TROPICAL),
-            imagenPrenda = 17
+            imagenPrenda = R.drawable.textilon_logo
         )
 
         val sur_modas = Tiendas(
@@ -180,7 +180,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.7,
             estadoDeTienda = "14:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO,Nombre_secciones.ROPA_INTERIOR,Nombre_secciones.FORMAL),
-            imagenPrenda = 18
+            imagenPrenda = R.drawable.surmoda_logo
         )
 
         val adidas = Tiendas(
@@ -189,12 +189,34 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
             puntuacionTienda = 4.7,
             estadoDeTienda = "11:00 a 21:00",
             tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO),
-            imagenPrenda = 17
+            imagenPrenda = R.drawable.adidas_logo
         )
 
+        tiendas.add(sur_modas)
+        tiendas.add(fair_play)
+        tiendas.add(clementine)
+        tiendas.add(adidas)
+        tiendas.add(textilon)
+        tiendas.add(levis)
+        tiendas.add(lupo)
+        tiendas.add(solmania)
+        tiendas.add(women_secret)
+        tiendas.add(yuth)
 
-// tiendas.add(clementine)
-        tiendasAdapter.addTiendas(tiendas)
+
+
+
+
+   // tiendasAdapter.addTiendas(tiendas,Nombre_secciones.FORMAL)
+tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DE_DIARIO)
+/*        val tiendas_deportivas =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DEPORTIVO)
+        val tiendas_tropical =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.TROPICAL)
+        val tiendas_ropa_interior =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.ROPA_INTERIOR)
+        val tiendas_para_dormir =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.PARA_DORMIR)*/
+
+
+
+
         binding.recyclerTiendas.apply {
             layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
             adapter = tiendasAdapter
