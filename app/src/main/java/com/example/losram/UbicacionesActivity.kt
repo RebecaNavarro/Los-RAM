@@ -4,11 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.commit
 import com.example.losram.databinding.ActivityUbicacionesBinding
-import com.example.losram.fragment.MapaFragment
 
-import androidx.fragment.app.commit
-import com.example.losram.R
-import com.example.losram.databinding.ActivityUbicacionesBinding
 import com.example.losram.fragment.MapaRehechoFragment
 
 class UbicacionesActivity : AppCompatActivity() {
