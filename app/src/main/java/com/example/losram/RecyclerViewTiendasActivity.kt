@@ -26,6 +26,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
 
 val tiendas = mutableListOf<Tiendas>()
         val clementine = Tiendas(
+            id = 1,
             nombreTienda = "Clementine",
             direccion = "Calle 18 de calacoto",
             puntuacionTienda = 4.3,
@@ -34,6 +35,7 @@ val tiendas = mutableListOf<Tiendas>()
             imagenPrenda = R.drawable.clementine_logo
         )
         val mango = Tiendas(
+            id = 2,
             nombreTienda = "MANGO",
             direccion = "Horacio Ferrecio #1172, La Paz",
             puntuacionTienda = 4.5,
@@ -43,6 +45,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val face_boutique = Tiendas(
+            id = 3,
             nombreTienda = "Face Boutique",
             direccion = "Montenegro",
             puntuacionTienda = 4.7,
@@ -52,6 +55,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val vickys_casual = Tiendas(
+            id = 4,
             nombreTienda = "Vickys casual",
             direccion = "Avenida Montenegro 933",
             puntuacionTienda = 4.4,
@@ -61,6 +65,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val benneton = Tiendas(
+            id = 5,
             nombreTienda = "Benneton",
             direccion = "Montenegro frente al carrusel",
             puntuacionTienda = 4.5,
@@ -70,6 +75,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val big_Sur = Tiendas(
+            id = 6,
             nombreTienda = "Big Sur Calacoto",
             direccion = "Calle 21 de calacoto",
             puntuacionTienda = 4.5,
@@ -79,6 +85,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val hering = Tiendas(
+            id = 7,
             nombreTienda = "HERING",
             direccion = "Calle 18 de calacoto",
             puntuacionTienda = 4.8,
@@ -88,6 +95,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val somos = Tiendas(
+            id = 8,
             nombreTienda = "Somos",
             direccion = "Entrada de achumani",
             puntuacionTienda = 4.6,
@@ -97,6 +105,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val whapa = Tiendas(
+            id = 9,
             nombreTienda = "Whapa",
             direccion = "Montenegro por la calle de vainilla",
             puntuacionTienda = 4.2,
@@ -106,6 +115,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val e_y_e = Tiendas(
+            id = 10,
             nombreTienda = "E&E",
             direccion = "Shopping norte Prado",
             puntuacionTienda = 4.2,
@@ -115,6 +125,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val levis = Tiendas(
+            id = 11,
             nombreTienda = "LEVIS Megacenter",
             direccion = "Megacenter 2do piso",
             puntuacionTienda = 4.7,
@@ -124,6 +135,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val yuth = Tiendas(
+            id = 12,
             nombreTienda = "Yuth",
             direccion = "Calle 21 calacoto frente a la iglesia",
             puntuacionTienda = 4.8,
@@ -133,6 +145,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val fair_play = Tiendas(
+            id = 13,
             nombreTienda = "Fair play Calacoto",
             direccion = "Calle 21 de calacoto",
             puntuacionTienda = 4.6,
@@ -142,6 +155,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val solmania = Tiendas(
+            id = 14,
             nombreTienda = "Solmania",
             direccion = "Montenegro por hotel los delfines",
             puntuacionTienda = 4.1,
@@ -151,6 +165,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val women_secret = Tiendas(
+            id = 15,
             nombreTienda = "Women Secret",
             direccion = "Montenegro frente al carrusel",
             puntuacionTienda = 4.9,
@@ -160,6 +175,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val lupo = Tiendas(
+            id = 16,
             nombreTienda = "Lupo Calacoto",
             direccion = "Calle 21 de calacoto",
             puntuacionTienda = 4.6,
@@ -169,6 +185,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val textilon = Tiendas(
+            id = 17,
             nombreTienda = "Textilon calacoto",
             direccion = "8261,Avenida 21-Washington",
             puntuacionTienda = 4.5,
@@ -178,6 +195,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val sur_modas = Tiendas(
+            id = 18,
             nombreTienda = "Sur Modas calacoto",
             direccion = "8261,Avenida 21-Washington",
             puntuacionTienda = 4.7,
@@ -187,6 +205,7 @@ val tiendas = mutableListOf<Tiendas>()
         )
 
         val adidas = Tiendas(
+            id = 19,
             nombreTienda = "Adidas calacoto",
             direccion = "8261,Avenida 21-Washington",
             puntuacionTienda = 4.7,
@@ -205,6 +224,7 @@ val tiendas = mutableListOf<Tiendas>()
         tiendas.add(solmania)
         tiendas.add(women_secret)
         tiendas.add(yuth)
+        tiendas.add(e_y_e)
 
         val listTitulos = mutableListOf<Titulo_seccion>()
 

@@ -5,6 +5,7 @@ data class Prendas(
     val nombrePrenda:String,
     val precio:Int,
     val imagenPrenda:Int,
-    val tipoDePrenda:String
-    //mas vendidos en activity
+    val tiendasId: Int,
+    val disponibilidad: String
+//mas vendidos en activity
 )

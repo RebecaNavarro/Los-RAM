@@ -2,16 +2,13 @@ package com.example.losram.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View.OnClickListener
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.losram.databinding.ItemBotonesSeccionesBinding
-import com.example.losram.dataclases.BotonSeccion
 
 class BotonesSeccionesAdapter : RecyclerView.Adapter<BotonesSeccionesAdapter.BotonesSeccionesAdapterViewHolder>() {
-    private var onClickListener : OnClickListener? = null
-    private var context: Context?= null
-    private val listaBotonesSecciones = mutableListOf<BotonSeccion>()
+     private var context: Context?= null
+    private val listaBotones = mutableListOf<Boton_de_secciones>()
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -26,36 +23,22 @@ class BotonesSeccionesAdapter : RecyclerView.Adapter<BotonesSeccionesAdapter.Bot
 
     override fun onBindViewHolder(
         holder: BotonesSeccionesAdapter.BotonesSeccionesAdapterViewHolder,
-        position: Int
-    ) {
-        holder.binding(listaBotonesSecciones[position])
-        holder.itemView.setOnClickListener{
-            onClickListener?.onClick(position, listaBotonesSecciones[position])
-
+        position: Int) {
+        holder.binding(listaBotones[position])
         }
-    }
 
-    override fun getItemCount(): Int {
-        return listaBotonesSecciones.size
-    }
-    fun setOnClickListener(onClickListener: OnClickListener) {
-        this.onClickListener = onClickListener
-    }
+    override fun getItemCount(): Int = listaBotones.size
 
-    interface OnClickListener {
-        fun onClick(position: Int, model: BotonSeccion)
-    }
+    inner class BotonesSeccionesAdapterViewHolder(private val binding: ItemBotonesSeccionesBinding):
+            RecyclerView.ViewHolder(binding.root) {
 
-    class BotonesSeccionesAdapterViewHolder(private val binding : ItemBotonesSeccionesBinding):RecyclerView.ViewHolder(binding.root){
-        fun binding(data:BotonSeccion){
-            binding.botonseccion.text=data.nombresec
+                fun binding(data:Boton_de_secciones) {
+                    binding.botonseccion.text = data.nombre_boton
+                }
+        fun addBoton(newListaBotones: List<Boton_de_secciones>) {
+            listaBotones.clear()
+            listaBotones.addAll(newListaBotones)
         }
-    }
-    fun addBotonSeccion(newBotonesSecciones:List<BotonSeccion>){
-        listaBotonesSecciones.clear()
-        listaBotonesSecciones.addAll(newBotonesSecciones)
-    }
-
-
+            }
 
 }

@@ -5,10 +5,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.losram.adapter.BotonesSeccionesAdapter
 import com.example.losram.databinding.ActivityPantallaprincipalBinding
-import com.example.losram.dataclases.BotonSeccion
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -18,6 +18,8 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
     private lateinit var binding: ActivityPantallaprincipalBinding
     private lateinit var auth: FirebaseAuth
     private val botonesSeccionesAdapter by lazy { BotonesSeccionesAdapter() }
+    private var onClickListener : View.OnClickListener? = null
+
 
     val context: Context = this
     val activity: Activity = this
@@ -33,7 +35,7 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
 
         botonesSeccionesAdapter.setOnClickListener(object : BotonesSeccionesAdapter.OnClickListener {
             //permite que los items del recyclerView sean clickeables. Mandando a la respectiva categoria
-            override fun onClick(position: Int, model: BotonSeccion) {
+            override fun onClick(position: Int, model: Boton_de_seccionesk) {
                 val categoriaPressed: BotonSeccion =
                    // ListaCategoriasMenu.listCategory[position]
                 val intent = Intent(context, RecyclerViewTiendasActivity::class.java)
