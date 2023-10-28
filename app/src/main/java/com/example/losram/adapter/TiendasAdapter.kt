@@ -39,15 +39,20 @@ class TiendasAdapter :
                    binding.TextViewNombreTienda.text = data.nombreTienda
                     binding.TextViewDireccion.text = data.direccion
                     binding.TextViewAbiertoCerrado.text = data.estadoDeTienda
+                    binding.imagenDeLista.setImageResource(data.imagenPrenda)
+                    binding.puntuacionTienda.text = data.puntuacionTienda.toString()
 
-                    ejemplo()
                 }
-           fun ejemplo(){}
 
             }
 
-    fun addTiendas(newlistaTiendas: List<Tiendas>) {
 
-listatiendas.size
+    fun addTiendas(newlistaTiendas: MutableList<Tiendas>, tipo_deseado: Nombre_secciones) {
+
+         newlistaTiendas.forEach{tienda: Tiendas ->
+             if (tipo_deseado in tienda.tipo){
+                 listatiendas.add(tienda)
+             }
+         }
     }
 }

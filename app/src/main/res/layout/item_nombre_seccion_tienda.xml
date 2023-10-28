@@ -7,9 +7,10 @@
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:id="@+id/textViewTituloSeccion"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
-       android:textSize="32dp"
+       android:textSize="24dp"
        android:fontFamily="@font/averiaseriflibre_italic"
        android:background="@color/amarillo"
        android:text="wenass"
