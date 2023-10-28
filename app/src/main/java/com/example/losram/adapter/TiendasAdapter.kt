@@ -42,9 +42,7 @@ class TiendasAdapter :
                     binding.imagenDeLista.setImageResource(data.imagenPrenda)
                     binding.puntuacionTienda.text = data.puntuacionTienda.toString()
 
-                    ejemplo()
                 }
-           fun ejemplo(){}
 
             }
 

@@ -7,6 +7,10 @@
 
     <style name="Theme.LosRAM" parent="Base.Theme.LosRAM" />
 
+    <style name="fondo" >
+        <item name="android:background">@color/perla</item>
+    </style>
+
     <style name="TextViewTitulos">
         <item name="android:textSize">32sp</item>
         <item name="android:fontFamily">@font/averiaseriflibre_bold</item>

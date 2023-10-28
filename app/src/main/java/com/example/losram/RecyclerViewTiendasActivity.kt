@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.losram.adapter.TiendasAdapter
+import com.example.losram.adapter.Titulo_seccionAdapter
 import com.example.losram.databinding.ActivityRecyclerViewTiendasBinding
 import com.example.losram.dataclases.Tiendas
+import com.example.losram.dataclases.Titulo_seccion
 
 class RecyclerViewTiendasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecyclerViewTiendasBinding
     private val tiendasAdapter by lazy {TiendasAdapter() }
+    private val titulo_seccionAdapter by lazy { Titulo_seccionAdapter() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_tiendas)
@@ -203,21 +206,50 @@ val tiendas = mutableListOf<Tiendas>()
         tiendas.add(women_secret)
         tiendas.add(yuth)
 
+        val listTitulos = mutableListOf<Titulo_seccion>()
 
+        val deportivo = Titulo_seccion(
+            texto_titulo_seccion = "Deportivo"
+        )
 
+        val de_diario = Titulo_seccion(
+            texto_titulo_seccion = "De Diario"
+        )
+        val formal = Titulo_seccion(
+            texto_titulo_seccion = "Formal"
+        )
+        val ropa_interior = Titulo_seccion(
+            texto_titulo_seccion = "Ropa Interior"
+        )
+        val tropical = Titulo_seccion(
+            texto_titulo_seccion = "Tropical"
+        )
+        val para_dormir = Titulo_seccion(
+            texto_titulo_seccion = "Para Dormir"
+        )
 
+      //  listTitulos.add(deportivo)
+       // listTitulos.add(formal)
+        listTitulos.add(de_diario)
+ /*       listTitulos.add(ropa_interior)
+        listTitulos.add(tropical)
+        listTitulos.add(para_dormir)
+        */
+        titulo_seccionAdapter.addTitulo(listTitulos)
 
-   // tiendasAdapter.addTiendas(tiendas,Nombre_secciones.FORMAL)
+        // tiendasAdapter.addTiendas(tiendas,Nombre_secciones.FORMAL)
 tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DE_DIARIO)
 /*        val tiendas_deportivas =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DEPORTIVO)
         val tiendas_tropical =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.TROPICAL)
         val tiendas_ropa_interior =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.ROPA_INTERIOR)
         val tiendas_para_dormir =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.PARA_DORMIR)*/
 
+        binding.recyclerNombreSeccionTienda.apply {
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
+            adapter = titulo_seccionAdapter
+        }
 
-
-
-        binding.recyclerTiendas.apply {
+        binding.recyclerTiendas1.apply {
             layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
             adapter = tiendasAdapter
         }
