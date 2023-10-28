@@ -12,6 +12,6 @@
         android:theme="@style/BotonesMujeres"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

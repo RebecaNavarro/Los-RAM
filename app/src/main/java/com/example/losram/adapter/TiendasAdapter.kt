@@ -12,7 +12,7 @@ class TiendasAdapter :
     RecyclerView.Adapter<TiendasAdapter.TiendasAdapterViewHolder>() {
 
     private var context: Context? = null
-    private val listatiendas = mutableListOf<Tiendas>()
+    private var listatiendas = listOf<Tiendas>()
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -47,12 +47,8 @@ class TiendasAdapter :
             }
 
 
-    fun addTiendas(newlistaTiendas: MutableList<Tiendas>, tipo_deseado: Nombre_secciones) {
+    fun addTiendas(newlistaTiends: List<Tiendas>) {
 
-         newlistaTiendas.forEach{tienda: Tiendas ->
-             if (tipo_deseado in tienda.tipo){
-                 listatiendas.add(tienda)
-             }
-         }
+            listatiendas = newlistaTiends
     }
 }
