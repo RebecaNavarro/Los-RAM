@@ -34,6 +34,7 @@ class PantallaDeInicioActivity : AppCompatActivity() {
         binding.botondeinicio.setOnClickListener {
             loginUser(binding.textocorreootelefono.text.toString(), binding.contrasena.text.toString())
         }
+
     }
 
     fun loginUser(email: String, password: String) {

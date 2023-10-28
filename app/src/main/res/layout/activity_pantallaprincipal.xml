@@ -7,83 +7,27 @@
     tools:context=".PantallaPrincipalActivivy"
     android:background="#F8F5E6">
 
-    <EditText
-        android:id="@+id/barradebusqueda"
-        android:layout_width="253dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Buscar productos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/lupita"
-        android:layout_width="28dp"
-        android:layout_height="36dp"
-        android:background="@drawable/lupa"
-        app:layout_constraintLeft_toRightOf="@id/barradebusqueda"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="0dp"
-        />
-
-    <ImageView
-        android:id="@+id/iconousuario"
-        android:layout_width="47dp"
-        android:layout_height="50dp"
-        android:background="@drawable/usuario"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toRightOf="@+id/lupita"
-        />
-
-    <ImageView
-        android:id="@+id/corazon"
-        android:layout_width="47dp"
-        android:layout_height="50dp"
-        android:background="@drawable/corazon"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toRightOf="@+id/iconousuario"
-        />
-
-    <Button
-        android:id="@+id/botonHombre"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/man"
-        android:theme="@style/BotonesHombres"
-        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        android:id="@+id/quebuscas"
+        android:theme="@style/TextViewSubTitulos"
+        android:text="@string/pregunta_secciones"
         android:layout_marginTop="32dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
-
-    <Button
-        android:id="@+id/botonMujer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mujeres"
-        android:theme="@style/BotonesMujeres"
-        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
-        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        ></TextView>
 
-    <Button
-        android:id="@+id/botonninos"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ninos"
-        android:theme="@style/BotonesNinhos"
-        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        tools:listitem="@layout/item_botones_secciones"
+        app:layout_constraintTop_toBottomOf="@+id/quebuscas"
         android:layout_marginTop="32dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="16dp"/>
 
     <TextView
         android:id="@+id/promos"
@@ -91,10 +35,12 @@
         android:layout_height="wrap_content"
         android:text="@string/promos"
         android:theme="@style/TextViewSubTitulos"
-        app:layout_constraintTop_toBottomOf="@+id/barradebusqueda"
+        app:layout_constraintTop_toBottomOf="@+id/quebuscas"
         android:layout_marginTop="150dp"
         app:layout_constraintLeft_toLeftOf="parent"
         />
+
+
 
     <TextView
         android:id="@+id/tendencias"
@@ -104,8 +50,51 @@
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintTop_toBottomOf="@+id/promos"
         android:layout_marginTop="250dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="151dp">
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/icoonoperfil"
+            android:layout_marginLeft="180dp"
+
+            />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/iconoubicacion"
+            android:layout_marginLeft="70dp"
+            />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/corazoon"
+            android:layout_marginLeft="300dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

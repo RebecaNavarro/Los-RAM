@@ -64,7 +64,11 @@
         <activity
             android:name=".UbicacionesActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".PantallaCargaActivity"
@@ -73,7 +77,6 @@
         <activity
             android:name=".PantallaDeInicioActivity"
             android:exported="true" />
-
         <activity
             android:name=".PantallaPrincipalActivivy"
             android:exported="true" />
