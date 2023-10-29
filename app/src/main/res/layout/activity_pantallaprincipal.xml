@@ -65,6 +65,7 @@
         android:layout_marginTop="151dp">
 
         <ImageView
+            android:id="@+id/ir_perfil"
             android:layout_width="57dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -76,6 +77,7 @@
             />
 
         <ImageView
+            android:id="@+id/ir_ubicacion"
             android:layout_width="47dp"
             android:layout_height="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -86,6 +88,7 @@
             />
 
         <ImageView
+            android:id="@+id/ir_favritos"
             android:layout_width="47dp"
             android:layout_height="50dp"
             app:layout_constraintBottom_toBottomOf="parent"

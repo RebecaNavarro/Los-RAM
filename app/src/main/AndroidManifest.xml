@@ -26,20 +26,16 @@
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
-
+        <activity
+            android:name=".PantallaPagarActivity"
+            android:exported="false" />
         <activity
             android:name=".RecyclerViewTiendasActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
         <activity
             android:name=".PrendaActivity"
             android:exported="false" />
@@ -50,12 +46,6 @@
             android:name=".FavoritosActivity"
             android:exported="false" />
         <activity
-            android:name=".Para_ellas_seccion"
-            android:exported="false" />
-        <activity
-            android:name=".PagoTarjetaActivity"
-            android:exported="false" />
-        <activity
             android:name=".GraciasActivity"
             android:exported="false" />
         <activity
@@ -63,6 +53,9 @@
             android:exported="true" />
         <activity
             android:name=".UbicacionesActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".PantallaCargaActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,18 +64,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PantallaCargaActivity"
-            android:exported="true"/>
-
-        <activity
             android:name=".PantallaDeInicioActivity"
             android:exported="true" />
         <activity
             android:name=".PantallaPrincipalActivivy"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

@@ -27,10 +27,9 @@ class MapaRehechoFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
-        val sydney = LatLng(-34.0, 151.0)
-
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val sydney = LatLng(-33.852, 151.211)
+        googleMap.addMarker(MarkerOptions().position(sydney).title("SYDNEY"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,20f))
     }
 
     override fun onCreateView(
