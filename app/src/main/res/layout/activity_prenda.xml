@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="0dp"
-                tools:listitem="@layout/item" />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,8 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="0dp"
-                tools:listitem="@layout/item_gafete" />
+                tools:layout_editor_absoluteX="0dp" />
 
         </LinearLayout>
 

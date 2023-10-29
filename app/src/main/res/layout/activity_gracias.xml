@@ -54,7 +54,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bolsa"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingTop="40dp"
+        android:paddingTop="56dp"
         android:paddingBottom="8dp"
         />
 

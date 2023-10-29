@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/perla"
+    tools:context=".PantallaPagarActivity"
+    >
+
+    <TextView
+        android:id="@+id/subtitulo_crearcuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/tupedido"
+        android:theme="@style/TextViewTitulos"
+        app:layout_constraintTop_toBottomOf="@id/botonatras"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/botonatras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/atras"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/a_pagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/a_pagar"
+        android:theme="@style/TextViewSubTitulos"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/subtitulo_crearcuenta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft="24dp"
+        />
+
+
+    <EditText
+        android:id="@+id/efectivo_delivery"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextDatos"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a_pagar"
+        android:hint="@string/efectivoaldelivery"
+        android:inputType="number"
+        android:maxLength="5"
+        />
+
+    <TextView
+        android:id="@+id/tu_ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/tu_ubi"
+        android:theme="@style/TextViewSubTitulos"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/efectivo_delivery"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/donde"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:theme="@style/EditTextDatos"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:lines="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tu_ubicacion"
+        android:hint="@string/donde"
+        />
+
+    <TextView
+        android:id="@+id/numero_telf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/telf"
+        android:theme="@style/TextViewSubTitulos"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/donde"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/tu_num"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextDatos"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_telf"
+        android:hint="@string/tu_num"
+        />
+
+    <TextView
+        android:id="@+id/facturacarnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/facturacarnet"
+        android:theme="@style/TextViewSubTitulos"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tu_num"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/carnet"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextDatos"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facturacarnet"
+        android:hint="@string/nit"
+        />
+
+    <TextView
+        android:id="@+id/nomfact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/nombrfact"
+        android:theme="@style/TextViewSubTitulos"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/carnet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextDatos"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomfact"
+        android:hint="@string/nom"
+        />
+
+    <Button
+        android:id="@+id/botonenter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/BotonesFuncionales"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="48dp"
+        android:text="@string/enter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

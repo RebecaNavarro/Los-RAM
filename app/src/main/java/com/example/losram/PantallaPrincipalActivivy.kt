@@ -30,18 +30,21 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
         auth = Firebase.auth
 
 
+        binding.irPerfil.setOnClickListener{
+            val intent :Intent = Intent(context, PerfilActivity::class.java)
+//            intent.putExtra(CLAVE_ID, userEmail)
+            startActivity(intent)
+        }
 
-        botonesSeccionesAdapter.setOnClickListener(object : BotonesSeccionesAdapter.OnClickListener {
-            //permite que los items del recyclerView sean clickeables. Mandando a la respectiva categoria
-            override fun onClick(position: Int, model: BotonSeccion) {
-                val categoriaPressed: BotonSeccion =
-                   // ListaCategoriasMenu.listCategory[position]
-                val intent = Intent(context, RecyclerViewTiendasActivity::class.java)
+        binding.irUbicacion.setOnClickListener{
+            val intent2 :Intent = Intent(context, UbicacionesActivity::class.java)
+            startActivity(intent2)
+        }
 
-               // intent.putExtra(CLAVE_CATEGORIA, categoriaPressed)
-                startActivity(intent)
-            }
-        })
+        binding.irFavritos.setOnClickListener{
+            val intent3 :Intent = Intent(context, FavoritosActivity::class.java)
+            startActivity(intent3)
+        }
 
     }
     fun iniciarBotonesRecyclerView(){

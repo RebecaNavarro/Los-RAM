@@ -42,6 +42,7 @@ class PantallaDeInicioActivity : AppCompatActivity() {
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val intent2: Intent = Intent(this, PantallaPrincipalActivivy::class.java)
+//                    intent.putExtra(CLAVE_STRING, email)
                     startActivity(intent2)
                 } else {
                     // Maneja la autenticación fallida aquí
