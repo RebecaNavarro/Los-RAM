@@ -1,5 +1,8 @@
 package com.example.losram
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -11,6 +14,9 @@ import com.example.losram.dataclases.Titulo_seccion
 
 class RecyclerViewTiendasActivity : AppCompatActivity() {
 
+    val context: Context = this
+    val activity: Activity = this
+
     private lateinit var binding: ActivityRecyclerViewTiendasBinding
     private val tiendasAdapter by lazy {TiendasAdapter() }
     private val titulo_seccionAdapter by lazy { Titulo_seccionAdapter() }
@@ -21,6 +27,12 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
         setContentView(binding.root)
         filtro = intent.getSerializableExtra("Key_Seccion") as Nombre_secciones ?: Nombre_secciones.FORMAL
         iniciarRecyclerView()
+
+        binding.atrasTiendas.setOnClickListener {
+            val intent: Intent = Intent(context, PantallaPrincipalActivivy::class.java)
+            startActivity(intent)
+        }
+
     }
     private lateinit var filtro : Nombre_secciones
 
@@ -150,6 +162,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
         estadoDeTienda = "11:00 a 21:00",
         tipo = listOf(Nombre_secciones.DE_DIARIO,Nombre_secciones.DEPORTIVO),
         imagenPrenda = R.drawable.adidas_logo
+
     )  )
 
 

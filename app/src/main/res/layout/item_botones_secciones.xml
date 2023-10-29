@@ -9,9 +9,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/botonseccion"
         android:text="@string/mujeres"
-        android:theme="@style/BotonesMujeres"
+        android:theme="@style/BotonesFuncionales"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginLeft="2dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

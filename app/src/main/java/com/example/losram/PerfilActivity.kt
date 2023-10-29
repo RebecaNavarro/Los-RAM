@@ -6,7 +6,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.losram.adapter.BotonesSeccionesAdapter
 import com.example.losram.databinding.ActivityPantallaprincipalBinding
 import com.example.losram.databinding.ActivityPerfilBinding
 import com.example.losram.dataclases.Perfil

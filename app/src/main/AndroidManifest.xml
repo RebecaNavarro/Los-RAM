@@ -31,18 +31,16 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
+
         <activity
             android:name=".PantallaPagarActivity"
             android:exported="false" />
         <activity
             android:name=".RecyclerViewTiendasActivity"
-            android:exported="true" >
-        </activity>
             android:exported="true"/>
-
-        <activity
-            android:name=".PrendaActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".PrendaActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".PerfilActivity"
             android:exported="false" />
@@ -57,10 +55,10 @@
             android:exported="true" />
         <activity
             android:name=".UbicacionesActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".PantallaCargaActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
