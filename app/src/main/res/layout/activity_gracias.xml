@@ -30,13 +30,14 @@
         app:layout_constraintTop_toBottomOf="@id/realizado"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingTop="8dp"
+        android:paddingTop="80dp"
     />
+
 
     <ImageView
         android:id="@+id/bolsa"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/bolsas_de_tienda"
         app:layout_constraintTop_toBottomOf="@id/gracias"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -52,56 +53,36 @@
         android:textAlignment="center"
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bolsa"
+        app:layout_constraintBottom_toTopOf="@id/rating_tienda"
         app:layout_constraintRight_toRightOf="parent"
         android:paddingTop="56dp"
         android:paddingBottom="8dp"
         />
 
-    <ImageView
-        android:id="@+id/star1"
+    <RatingBar
+        android:id="@+id/rating_tienda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/star"
-        app:layout_constraintTop_toBottomOf="@id/puntuacion"
-        app:layout_constraintRight_toLeftOf="@id/star2"
-        />
-
-    <ImageView
-        android:id="@+id/star2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/star"
-        app:layout_constraintTop_toBottomOf="@id/puntuacion"
-        app:layout_constraintRight_toLeftOf="@id/star3"
-        />
-
-    <ImageView
-        android:id="@+id/star3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/star"
-        app:layout_constraintTop_toBottomOf="@id/puntuacion"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/plomo"
+        android:progressTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/listo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/star4"
+    <Button
+        android:id="@+id/listo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/star"
-        app:layout_constraintTop_toBottomOf="@id/puntuacion"
-        app:layout_constraintLeft_toRightOf="@id/star3"
-        />
-
-    <ImageView
-        android:id="@+id/star5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/star"
-        app:layout_constraintTop_toBottomOf="@id/puntuacion"
-        app:layout_constraintLeft_toRightOf="@id/star4"
+        android:text="@string/listo"
+        android:textAlignment="center"
+        android:theme="@style/BotonesFuncionales"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/omitir"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30dp"
         />
 
     <TextView
@@ -112,10 +93,9 @@
         android:textAlignment="center"
         android:theme="@style/TextViewTextoNormal"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/star5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingTop="4dp"
-
+        android:layout_marginBottom="30dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,7 +47,7 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
         }
 
         binding.irFavritos.setOnClickListener{
-            val intent3 :Intent = Intent(context, FavoritosActivity::class.java)
+            val intent3 :Intent = Intent(context, PantallaPagarActivity::class.java)
             startActivity(intent3)
         }
 

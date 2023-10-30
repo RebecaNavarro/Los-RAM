@@ -64,8 +64,9 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.0.0")
 
     implementation ("com.github.sparrow007:carouselrecyclerview:1.2.6")
-
     implementation("com.github.bumptech.glide:glide:4.13.0")
+
+
 
 
     testImplementation("junit:junit:4.13.2")

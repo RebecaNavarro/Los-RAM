@@ -8,6 +8,7 @@
     <string name="contrasenha">Ingresa tu contraseña nueva</string>
     <string name="o_crear_cuenta">- o registrate con-</string>
     <string name="enter">Enter</string>
+    <string name="pagar">Pagar</string>
     <string name="para_ellas">Para ellas</string>
     <string name="pregunta_secciones">Que tipo de tienda buscas?</string>
     <string name="Deportivo">Deportivo</string>
@@ -24,10 +25,10 @@
     <string name="nit">Añade un NIT</string>
     <string name="facturacarnet">Documento para la factura:</string>
     <string name="tu_num">Añade un número de teléfono:</string>
-    <string name="telf">Número de contacto:</string>
+    <string name="telf">Número de contacto (+591):</string>
     <string name="donde">¿A dónde te lo llevamos?</string>
     <string name="tu_ubi">Descripción  de tu ubicación:</string>
-    <string name="a_pagar">Monto a pagar:</string>
+    <string name="a_pagar">Monto a pagar (Bs.):</string>
     <string name="descripcion">Descripción: </string>
     <string name="tupedido">Tu pedido</string>
     <string name="ubicacion_titulo">Ubicación</string>
@@ -42,6 +43,7 @@
     <string name="codigo_seguridad">Código de seguridad</string>
     <string name="comprobar">Comprobar</string>
     <string name="continuar_conel_pago">Continuar con el pago</string>
+    <string name="listo">Enviar Calificación</string>
 
     <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
