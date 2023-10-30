@@ -44,6 +44,11 @@
     <string name="comprobar">Comprobar</string>
     <string name="continuar_conel_pago">Continuar con el pago</string>
     <string name="listo">Enviar Calificación</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="show">Show</string>
+    <string name="titulo_ususario">Usuario:</string>
+    <string name="titulo_email">Email:</string>
+    <string name="prenda">Prenda</string>
 
     <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>

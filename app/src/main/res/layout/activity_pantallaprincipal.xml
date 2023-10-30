@@ -23,7 +23,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyBotones"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
