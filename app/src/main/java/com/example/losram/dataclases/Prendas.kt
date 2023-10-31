@@ -8,6 +8,8 @@ data class Prendas(
     val precio:Int,
     val imagenPrenda:Int,
     val tienda: Nombre_tiendas,
-    val disponibilidad: String
+    val disponibilidad: String,
+    val corazon: Boolean,
+    val add_a_carrito: Boolean
 //mas vendidos en activity
 )
