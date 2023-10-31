@@ -49,7 +49,11 @@
     <string name="titulo_ususario">Usuario:</string>
     <string name="titulo_email">Email:</string>
     <string name="prenda">Prenda</string>
-    <string name="mi_perfil">Mi Perfil</string>
+    <string name="total_a_pagar">Total</string>
+    <string name="detalles">Detalles</string>
+    <string name="por_servicio">Comisión por servicio</string>
+    <string name="comision">5 Bs.</string>
+
 
     <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
