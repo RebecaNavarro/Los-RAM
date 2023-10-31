@@ -3,7 +3,6 @@ package com.example.losram
 import android.content.Intent
 import android.app.Activity
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -117,6 +116,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
         imagenPrenda = R.drawable.whapa_logo
     ),  Tiendas(
         id = 10,
+
         nombreTienda = Nombre_tiendas.E_Y_E,
         direccion = "Shopping norte Prado",
         puntuacionTienda = 4.2,
