@@ -68,12 +68,21 @@
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:id="@+id/corazon_prendas"
+        android:id="@+id/corazon_para_carrito"
         android:src="@drawable/corazon"
-        app:layout_constraintTop_toTopOf="@id/fondo_lista_tiendas"
-        app:layout_constraintBottom_toBottomOf="@id/fondo_lista_tiendas"
-        app:layout_constraintRight_toRightOf="@id/fondo_lista_tiendas"
-        android:layout_margin="8dp"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/TextViewNombrePrenda"
+        app:layout_constraintRight_toRightOf="@+id/fondo_lista_tiendas"
+        android:layout_marginRight="8dp"></ImageView>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_prendas"
+        app:layout_constraintTop_toBottomOf="@+id/corazon_para_carrito"
+        app:layout_constraintRight_toRightOf="@+id/fondo_lista_tiendas"
+></CheckBox>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

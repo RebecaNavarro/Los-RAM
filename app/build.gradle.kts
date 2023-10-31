@@ -66,7 +66,7 @@ dependencies {
     implementation ("com.github.sparrow007:carouselrecyclerview:1.2.6")
     implementation("com.github.bumptech.glide:glide:4.13.0")
 
-
+    implementation ("com.google.code.gson:gson:2.10.1")
 
 
     testImplementation("junit:junit:4.13.2")

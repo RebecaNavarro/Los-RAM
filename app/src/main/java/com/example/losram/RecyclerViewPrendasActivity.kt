@@ -1,5 +1,6 @@
 package com.example.losram
 
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,8 +20,49 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
         setContentView(binding.root)
         filtro = intent.getSerializableExtra("Key_Tienda") as Nombre_tiendas
 
-        iniciarRecyclerView()
+        agregarProductos()
+
+        setupRecyclerView()
+
+        leerSharedPreferences()
+
     }
+
+    private fun leerSharedPreferences() {
+        // Reemplaza MODE_PRIVATE con el segundo argumento en getSharedPreferences
+        val sp = this.getPreferences(MODE_PRIVATE)
+
+        val jsonString = sp.getString("carro_compras_json", null)
+
+        // Aquí debes procesar el JSON almacenado y asignarlo a carroCompra
+        if (jsonString != null) {
+            // Utiliza la misma lógica que en cargarCarroCompras
+        }
+    }
+
+    private fun setupRecyclerView() {
+        binding.recyclerPrendas.layoutManager = LinearLayoutManager(this)
+        binding.recyclerPrendas.adapter = prendasAdapter
+    }
+
+    private fun agregarProductos() {
+        val listaprendas: List<Prendas> = listOf(
+            Prendas(
+                descripcion = "a",
+                nombrePrenda = "Bikini cintura alta",
+                precio = 120,
+                imagenPrenda = R.drawable.bikinis1, // Asegúrate de que esta referencia sea válida
+                tienda = Nombre_tiendas.SOLMANIA,
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
+            ),
+            // Agrega más productos aquí
+        )
+
+        prendasAdapter.addPrendas(listaprendas)
+    }
+
     private lateinit var filtro: Nombre_tiendas
 
         val listaprendas : List<Prendas> = listOf(
@@ -30,63 +72,83 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
                     precio = 120,
                     imagenPrenda = R.drawable.bikinis1,
                     tienda = Nombre_tiendas.SOLMANIA,
-                    disponibilidad = "Disponible"
+                    disponibilidad = "Disponible",
+                    corazon = false,
+                    add_a_carrito = false
+
         ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini con cadena",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis3,
                 tienda = Nombre_tiendas.SOLMANIA,
-                disponibilidad = "En el proximo stock"
+                disponibilidad = "En el proximo stock",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini una pieza",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis5,
                 tienda = Nombre_tiendas.WOMEN_SECRET,
-                disponibilidad = "Disponible"
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini con falda",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis6,
                 tienda = Nombre_tiendas.WOMEN_SECRET,
-                disponibilidad = "Disponible"
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini con cinta cruzada",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis7,
                 tienda = Nombre_tiendas.TEXTILON,
-                disponibilidad = "En el proximo stock"
+                disponibilidad = "En el proximo stock",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini6",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis8,
                 tienda = Nombre_tiendas.E_Y_E,
-                disponibilidad = "Disponible"
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini floreado",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis9,
                 tienda = Nombre_tiendas.SOLMANIA,
-                disponibilidad = "Disponible"
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
+
             ),Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini Blanco con piedras",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis10,
                 tienda = Nombre_tiendas.SOLMANIA,
-                disponibilidad = "Disponiblee"
+                disponibilidad = "Disponible",
+                corazon = false,
+                add_a_carrito = false
             ), Prendas(
                 descripcion = "a",
                 nombrePrenda = "Bikini Nagro con circulos",
                 precio = 120,
                 imagenPrenda = R.drawable.bikinis11,
                 tienda = Nombre_tiendas.SOLMANIA,
-                disponibilidad = "Disponiblee"
+                disponibilidad = "Disponiblee",
+                corazon = false,
+                add_a_carrito = false
             ) )
 
 
