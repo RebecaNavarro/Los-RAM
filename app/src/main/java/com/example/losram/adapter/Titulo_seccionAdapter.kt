@@ -26,6 +26,7 @@ class Titulo_seccionAdapter : RecyclerView.Adapter<Titulo_seccionAdapter.Titulo_
           )
         }
 
+
     override fun onBindViewHolder(
         holder: Titulo_seccionAdapter.Titulo_seccionAdapterViewHolder,
         position: Int

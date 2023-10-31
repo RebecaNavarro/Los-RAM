@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F5E6"
+    android:background="@color/perla"
     tools:context=".PantallaPrincipalActivivy">
 
     <TextView
@@ -16,15 +16,16 @@
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="15dp"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="24dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quebuscas"
         tools:listitem="@layout/item_botones_secciones" />
@@ -33,23 +34,42 @@
         android:id="@+id/promos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="20dp"
         android:text="@string/promos"
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quebuscas" />
+        app:layout_constraintTop_toBottomOf="@+id/recyBotones" />
 
 
     <TextView
         android:id="@+id/tendencias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="230dp"
         android:text="@string/tendencias"
         android:theme="@style/TextViewSubTitulos"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promos" />
 
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/carrusel_recycer"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/promos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="12dp"
+        />
+
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/carrusel_recycer2"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/tendencias"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="12dp"
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/end"
@@ -61,6 +81,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
+            android:id="@+id/ir_perfil"
             android:layout_width="57dp"
             android:layout_height="0dp"
             android:layout_marginLeft="180dp"
@@ -72,6 +93,7 @@
             />
 
         <ImageView
+            android:id="@+id/ir_ubicacion"
             android:layout_width="47dp"
             android:layout_height="50dp"
             android:layout_marginLeft="70dp"
@@ -81,6 +103,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/ir_favritos"
             android:layout_width="47dp"
             android:layout_height="50dp"
             android:layout_marginLeft="300dp"

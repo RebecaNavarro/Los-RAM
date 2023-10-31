@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.losram.adapter.BotonesAdapter
 import com.example.losram.databinding.ActivityPantallaprincipalBinding
@@ -32,6 +33,63 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
         setContentView(binding.root)
         iniciarBotonesRecyclerView()
         auth = Firebase.auth
+
+
+        binding.irPerfil.setOnClickListener{
+            val intent :Intent = Intent(context, PerfilActivity::class.java)
+//            intent.putExtra(CLAVE_ID, userEmail)
+            startActivity(intent)
+        }
+
+        binding.irUbicacion.setOnClickListener{
+            val intent2 :Intent = Intent(context, UbicacionesActivity::class.java)
+            startActivity(intent2)
+        }
+
+        binding.irFavritos.setOnClickListener{
+            val intent3 :Intent = Intent(context, PantallaPagarActivity::class.java)
+            startActivity(intent3)
+        }
+
+        val carrusel1List = ArrayList<CarruselModel>()
+        carrusel1List.add(CarruselModel(R.drawable.promocion1))
+        carrusel1List.add(CarruselModel(R.drawable.promocion2))
+        carrusel1List.add(CarruselModel(R.drawable.promocion3))
+        carrusel1List.add(CarruselModel(R.drawable.promocion4))
+        carrusel1List.add(CarruselModel(R.drawable.promocion5))
+        carrusel1List.add(CarruselModel(R.drawable.promocion6))
+        carrusel1List.add(CarruselModel(R.drawable.promocion7))
+
+        val adapter = CarruselAdapter(carrusel1List)
+
+        binding.apply {
+            carruselRecycer.adapter = adapter
+            carruselRecycer.set3DItem(true)
+            carruselRecycer.setAlpha(true)
+            carruselRecycer.setInfinite(true)
+        }
+
+        val carrusel2List = ArrayList<CarruselModel>()
+        carrusel2List.add(CarruselModel(R.drawable.tendencia1))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias2))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias3))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias4))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias5))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias6))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias7))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias8))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias9))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias10))
+        carrusel2List.add(CarruselModel(R.drawable.tendencias11))
+
+        val adapter2 = CarruselAdapter(carrusel2List)
+
+        binding.apply {
+            carruselRecycer2.adapter = adapter2
+            carruselRecycer2.set3DItem(true)
+            carruselRecycer2.setAlpha(true)
+            carruselRecycer2.setInfinite(true)
+        }
 
     }
     fun iniciarBotonesRecyclerView(){

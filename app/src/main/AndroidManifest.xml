@@ -14,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
-
+        <activity
+            android:name=".RecyclerViewPrendasActivity"
+            android:exported="false" />
+        <activity android:name=".CarritoActivity"
+            android:exported="true"/>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -32,25 +36,21 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
+            android:name=".PantallaPagarActivity"
+            android:exported="true" />
+        <activity
             android:name=".RecyclerViewTiendasActivity"
             android:exported="true" >
-
         </activity>
         <activity
             android:name=".PrendaActivity"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FavoritosActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Para_ellas_seccion"
-            android:exported="false" />
-        <activity
-            android:name=".PagoTarjetaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".GraciasActivity"
             android:exported="false" />
@@ -60,28 +60,22 @@
         <activity
             android:name=".UbicacionesActivity"
             android:exported="true" />
-
-
         <activity
             android:name=".PantallaCargaActivity"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".PantallaDeInicioActivity"
             android:exported="true" />
         <activity
             android:name=".PantallaPrincipalActivivy"
-            android:exported="true" >
-
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>
