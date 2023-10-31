@@ -15,7 +15,7 @@
         android:theme="@style/Theme.LosRAM"
         tools:targetApi="31">
         <activity
-            android:name=".dataclases.RecyclerViewPrendasActivity"
+            android:name=".RecyclerViewPrendasActivity"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -37,9 +37,7 @@
             android:name=".RecyclerViewTiendasActivity"
             android:exported="true" >
         </activity>
-        <activity
-            android:name=".PrendaActivity"
-            android:exported="false" />
+
         <activity
             android:name=".PerfilActivity"
             android:exported="false" />
@@ -61,11 +59,6 @@
         <activity
             android:name=".UbicacionesActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".PantallaCargaActivity"
@@ -76,7 +69,13 @@
             android:exported="true" />
         <activity
             android:name=".PantallaPrincipalActivivy"
-            android:exported="true" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />

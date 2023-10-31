@@ -36,18 +36,6 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
 
 
 
-        botonesSeccionesAdapter.setOnClickListener(object : BotonesSeccionesAdapter.OnClickListener {
-            //permite que los items del recyclerView sean clickeables. Mandando a la respectiva categoria
-            override fun onClick(position: Int, model: BotonSeccion) {
-                val categoriaPressed: BotonSeccion =
-                   // ListaCategoriasMenu.listCategory[position]
-                val intent = Intent(context, RecyclerViewTiendasActivity::class.java)
-
-               // intent.putExtra(CLAVE_CATEGORIA, categoriaPressed)
-                startActivity(intent)
-            }
-        })
-
     }
     fun iniciarBotonesRecyclerView(){
 

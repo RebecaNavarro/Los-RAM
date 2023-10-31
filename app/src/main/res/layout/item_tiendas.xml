@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@color/perla"
     android:gravity="center_horizontal"
+    android:id="@+id/item_tienda"
     >
 
     <View
