@@ -1,8 +1,8 @@
 package com.example.losram.dataclases
 
 data class Perfil(
-    val nombre:String,
-    val apellidos:String,
-    val tarjetas:Int
-    //favoritos con ayuda de los activity
+
+    val usuario:String,
+    val nombre:String
+
 )

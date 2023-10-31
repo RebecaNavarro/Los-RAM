@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "680958452731",
-    "project_id": "superchero-25ebc",
-    "storage_bucket": "superchero-25ebc.appspot.com"
+    "project_number": "596443099124",
+    "project_id": "losram-8ec74",
+    "storage_bucket": "losram-8ec74.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:680958452731:android:f78afb5dbcb979a4cda15e",
+        "mobilesdk_app_id": "1:596443099124:android:573b8a5194a6a1cee453a1",
         "android_client_info": {
           "package_name": "com.example.losram"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD9vAs-rQw4r5WnZxahV8XQFXsmmyAkcNM"
+          "current_key": "AIzaSyCzqAiqDKRIzQU5lyYBg6sAROuDxML8pgo"
         }
       ],
       "services": {

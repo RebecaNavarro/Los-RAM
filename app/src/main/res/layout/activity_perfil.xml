@@ -8,73 +8,78 @@
     android:background="#F8F5E6">
 
     <ImageView
-        android:id="@+id/botonatres"
+        android:id="@+id/botonatras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/atras"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"/>
 
     <ImageView
         android:id="@+id/iconoperfil"
         android:layout_width="130dp"
         android:layout_height="122dp"
         android:src="@drawable/perfil2"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="68dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonatras"
+        android:layout_marginTop="24dp"/>
 
     <TextView
-        android:id="@+id/infonombre"
+        android:id="@+id/titulo_info_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="224dp" />
+        android:text="@string/titulo_ususario"
+        android:theme="@style/TextViewTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconoperfil"
+        android:layout_marginTop="80dp"/>
 
     <TextView
-        android:id="@+id/infoapellido"
+        android:id="@+id/infousuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="hfcv"
         android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconoperfil"
+        android:layout_marginTop="120dp"/>
 
     <TextView
-        android:id="@+id/infotarjetas"
+        android:id="@+id/titulo_info_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/infotarjetas"
-        android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="364dp" />
+        android:text="@string/titulo_email"
+        android:theme="@style/TextViewTitulos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infousuario"
+        android:layout_marginTop="80dp"/>
 
     <TextView
-        android:id="@+id/numerotarjeta"
+        android:id="@+id/infoemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="gbhj"
         android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="440dp" />
-
-    <TextView
-        android:id="@+id/fav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/infofavoritos"
-        android:theme="@style/TextViewSubTitulos"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="504dp" />
-
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infousuario"
+        android:layout_marginTop="120dp"/>
     <Button
         android:id="@+id/cerrarsesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/close"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="578dp" />
+        android:theme="@style/BotonesFuncionales"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="72dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

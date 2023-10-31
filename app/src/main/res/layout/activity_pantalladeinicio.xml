@@ -42,6 +42,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="46dp" />
 
+    <ImageButton
+        android:id="@+id/showPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/perla"
+        android:text="@string/show"
+        android:src="@drawable/eye"
+        app:layout_constraintLeft_toRightOf="@id/contrasena"
+        app:layout_constraintTop_toBottomOf="@id/textocorreootelefono"
+        android:layout_marginTop="46dp"
+        />
+
     <Button
         android:id="@+id/botondeinicio"
         android:layout_width="wrap_content"
@@ -54,21 +66,11 @@
         android:layout_marginTop="56dp" />
 
     <TextView
-        android:id="@+id/olvidemicontraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/olvido"
-        app:layout_constraintTop_toBottomOf="@id/botondeinicio"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="36dp" />
-
-    <TextView
         android:id="@+id/o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/o"
-        app:layout_constraintTop_toBottomOf="@id/olvidemicontraseña"
+        app:layout_constraintTop_toBottomOf="@id/botondeinicio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="56dp" />
