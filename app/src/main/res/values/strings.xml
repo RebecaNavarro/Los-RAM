@@ -49,6 +49,7 @@
     <string name="titulo_ususario">Usuario:</string>
     <string name="titulo_email">Email:</string>
     <string name="prenda">Prenda</string>
+    <string name="mi_perfil">Mi Perfil</string>
 
     <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
