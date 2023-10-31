@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/perla"
+    android:gravity="center_horizontal"
+    >
+
+        <View
+            android:id="@+id/fondo_lista_tiendas"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"></View>
+
+        <ImageView
+            android:id="@+id/imagenDeLista"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/fondo_lista_tiendas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_lista_tiendas"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:id="@+id/TextViewNombrePrenda"
+            android:text="Nombre_prenda"
+            android:theme="@style/TextViewSubTitulos"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toRightOf="@+id/imagenDeLista"
+            app:layout_constraintTop_toTopOf="@+id/fondo_lista_tiendas"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:id="@+id/TextViewPrecio"
+            android:theme="@style/TextViewTextoNormal"
+            app:layout_constraintLeft_toRightOf="@+id/imagenDeLista"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewNombrePrenda"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:id="@+id/TextViewDisponibilidad"
+            android:text="Disponible"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/imagenDeLista"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewPrecio"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/corazon_prendas"
+            android:src="@drawable/corazon"
+            app:layout_constraintTop_toTopOf="@id/fondo_lista_tiendas"
+            app:layout_constraintBottom_toBottomOf="@id/fondo_lista_tiendas"
+            app:layout_constraintRight_toRightOf="@id/fondo_lista_tiendas"
+            android:layout_margin="8dp"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

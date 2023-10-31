@@ -19,6 +19,7 @@
     <string name="ropa_interior">Ropa interior</string>
     <string name="mas_populares">Mas populares:</string>
     <string name="efectivoaldelivery">¿Cuánto le darás al delivery?</string>
+    <string name="detalle_compra">Detalle de la compra</string>
 
     <string name="nombrfact">Nombre para la factura:</string>
     <string name="nom">Añade un nombre</string>
@@ -49,6 +50,11 @@
     <string name="titulo_ususario">Usuario:</string>
     <string name="titulo_email">Email:</string>
     <string name="prenda">Prenda</string>
+    <string name="total_a_pagar">Total</string>
+    <string name="detalles">Detalles</string>
+    <string name="por_servicio">Comisión por servicio</string>
+    <string name="comision">5 Bs.</string>
+
 
     <string name="olvido">¿Olvidaste tu contraseña?</string>
     <string name="o">-----------------o-----------------</string>
