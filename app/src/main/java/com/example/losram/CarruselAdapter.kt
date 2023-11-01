@@ -24,13 +24,8 @@ class CarruselAdapter(private var carrruselList: List<CarruselModel>): RecyclerV
 
         val promo = carrruselList[position]
         holder.binding.apply {
-//            Glide.with(binding.carruselImage.context)
-//                .load(carrruselList[position].imagen)
-//                .into(binding.carruselImage)
-
 
             Glide.with(carruselImage).load(carrruselList[position].imagen).into(carruselImage)
-//            promoName.text = promo.name
         }
     }
 }

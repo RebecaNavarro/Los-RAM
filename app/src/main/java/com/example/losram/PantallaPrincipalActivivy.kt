@@ -52,7 +52,7 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
         }
 
         binding.irFavritos.setOnClickListener{
-            val intent3 :Intent = Intent(context, PantallaPagarActivity::class.java)
+            val intent3 :Intent = Intent(context, FavoritosActivity::class.java)
             startActivity(intent3)
         }
 
@@ -69,8 +69,6 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
 
         binding.apply {
             carruselRecycer.adapter = adapter
-            carruselRecycer.set3DItem(true)
-            carruselRecycer.setAlpha(true)
             carruselRecycer.setInfinite(true)
         }
 
@@ -91,8 +89,6 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
 
         binding.apply {
             carruselRecycer2.adapter = adapter2
-            carruselRecycer2.set3DItem(true)
-            carruselRecycer2.setAlpha(true)
             carruselRecycer2.setInfinite(true)
         }
 
