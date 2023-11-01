@@ -17,9 +17,6 @@ import com.google.firebase.ktx.Firebase
 
 class PantallaDeInicioActivity : AppCompatActivity() {
 
-    lateinit var imageButton: ImageButton
-    lateinit var editText: EditText
-
     private lateinit var binding: ActivityPantalladeinicioBinding
     private lateinit var auth: FirebaseAuth
 
@@ -42,20 +39,17 @@ class PantallaDeInicioActivity : AppCompatActivity() {
         binding.botondeinicio.setOnClickListener {
             loginUser(binding.textocorreootelefono.text.toString(), binding.contrasena.text.toString())
         }
-        imageButton = findViewById(R.id.showPasswordButton)
-        editText = findViewById(R.id.contrasena)
-
 
         binding.showPasswordButton.setOnClickListener{
-            if (editText.inputType == InputType.TYPE_TEXT_VARIATION_PASSWORD) {
+            if (binding.contrasena.inputType == InputType.TYPE_TEXT_VARIATION_PASSWORD) {
                 // Si la contraseña está oculta, muéstrala
-                editText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+                binding.contrasena.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
             } else {
                 // Si la contraseña está visible, ocúltala
-                editText.inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
+                binding.contrasena.inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
             }
             // Mueve el cursor al final del texto para mantener la visibilidad de la contraseña
-            editText.setSelection(editText.text.length)
+            binding.contrasena.setSelection(binding.contrasena.text.length)
         }
 
     }
