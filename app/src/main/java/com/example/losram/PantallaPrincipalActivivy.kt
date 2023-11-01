@@ -14,10 +14,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
+
+
+
 class PantallaPrincipalActivivy : AppCompatActivity() {
 
     private lateinit var binding: ActivityPantallaprincipalBinding
     private lateinit var auth: FirebaseAuth
+
     private val secciones= listOf<Nombre_secciones>(Nombre_secciones.DEPORTIVO,Nombre_secciones.DE_DIARIO,Nombre_secciones.FORMAL,
                                                         Nombre_secciones.TROPICAL,Nombre_secciones.PARA_DORMIR,Nombre_secciones.ROPA_INTERIOR)
 
@@ -27,13 +32,13 @@ class PantallaPrincipalActivivy : AppCompatActivity() {
     val context: Context = this
     val activity: Activity = this
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPantallaprincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
         iniciarBotonesRecyclerView()
         auth = Firebase.auth
-
 
         binding.irPerfil.setOnClickListener{
             val intent :Intent = Intent(context, PerfilActivity::class.java)

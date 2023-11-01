@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/perla"
     android:gravity="center_horizontal"
+    android:id="@+id/prendas_item"
     >
 
     <View
@@ -66,14 +68,16 @@
         />
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
         android:id="@+id/corazon_prendas"
+        android:layout_width="24dp"
+        android:layout_height="28dp"
+        android:layout_margin="8dp"
+        android:layout_marginRight="16dp"
         android:src="@drawable/corazon"
-        app:layout_constraintTop_toTopOf="@id/fondo_lista_tiendas"
         app:layout_constraintBottom_toBottomOf="@id/fondo_lista_tiendas"
         app:layout_constraintRight_toRightOf="@id/fondo_lista_tiendas"
-        android:layout_margin="8dp"></ImageView>
+        app:layout_constraintTop_toTopOf="@id/fondo_lista_tiendas"
+        app:layout_constraintVertical_bias="0.467"></ImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
