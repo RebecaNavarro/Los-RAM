@@ -5,35 +5,55 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.losram.adapter.PrendasAdapter
 import com.example.losram.databinding.ActivityRecyclerViewPrendasBinding
 import com.example.losram.dataclases.Prendas
 import com.example.losram.dataclases.Tiendas
 
-class RecyclerViewPrendasActivity : AppCompatActivity() {
+import android.util.Log
+import com.example.losram.dataclases.Favorite
+
+class RecyclerViewPrendasActivity : AppCompatActivity(),  PrendasAdapter.OnFavoritoClickListener{
 
     private lateinit var binding: ActivityRecyclerViewPrendasBinding
+    private lateinit var favoritosManager: FavoriteManager
     private val prendasAdapter by lazy { PrendasAdapter() }
 
     val context: Context = this
     val activity: Activity = this
+
+
+    private fun agregarDosFavoritos( nombre: String, position: Int) {
+        val listaActual = favoritosManager.obtenerFavoritos().toMutableList()
+        Log.d("DEBUG_TAG", "Lista Actual: $listaActual")
+        listaActual.add(Favorite(id = position, nombre = nombre))
+        Log.d("DEBUG_TAG", "Lista Final: $listaActual")
+        favoritosManager.guardarFavoritos(listaActual)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        favoritosManager = FavoriteManager(this)
         setContentView(R.layout.activity_recycler_view_prendas)
         binding = ActivityRecyclerViewPrendasBinding.inflate(layoutInflater)
         setContentView(binding.root)
         filtro = intent.getSerializableExtra("Key_Tienda") as Nombre_tiendas
-
         iniciarRecyclerView()
 
-        binding.botonatras.setOnClickListener{
-            val intent: Intent = Intent(context, RecyclerViewTiendasActivity::class.java)
+        binding.botonatras.setOnClickListener {
+            val intent: Intent = Intent(context, PantallaPrincipalActivivy::class.java)
             startActivity(intent)
         }
-
-
     }
+
+    override fun onFavoritoClick(position: Int, nombre: String, id: Int) {
+        Toast.makeText(this, "Favorito clickeado en posición $position con nombre $nombre", Toast.LENGTH_SHORT).show()
+        agregarDosFavoritos(nombre, position)
+        // Todo: set true o false when you clicked on the heart icon
+    }
+
     private lateinit var filtro: Nombre_tiendas
 
     val listaprendas : List<Prendas> = listOf(
@@ -1547,20 +1567,18 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
 
 
     fun iniciarRecyclerView(){
-/*        prendasAdapter.addPrendas(listaprendas.filter {
-          it.tienda.equals(filtro)
-        })*/
+        /*        prendasAdapter.addPrendas(listaprendas.filter {
+                  it.tienda.equals(filtro)
+                })*/
         val prendasfiltradas = mutableListOf<Prendas>()
         listaprendas.forEach {prenda ->
             if(prenda.tienda.equals(filtro) ) {
                 prendasfiltradas.add(prenda)
 
             }
-
-
         }
         prendasAdapter.addPrendas(prendasfiltradas)
-
+        prendasAdapter.setOnFavoritoClickListener(this)
 
         binding.recyclerPrendas.apply {
             layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
@@ -1569,9 +1587,8 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
         }
 
         binding.recyclerPrendas.adapter = prendasAdapter
+
         //la lista filtrada al adapter de tienda?
-
-
     }
 
 }

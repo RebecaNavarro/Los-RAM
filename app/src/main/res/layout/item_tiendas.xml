@@ -26,7 +26,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:layout_weight="1"
-        android:background="@color/black"
+        android:background="@color/white"
         app:layout_constraintLeft_toLeftOf="@id/fondo_lista_tiendas"
         app:layout_constraintTop_toTopOf="@+id/fondo_lista_tiendas"
         android:layout_margin="16dp"/>

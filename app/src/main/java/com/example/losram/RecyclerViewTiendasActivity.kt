@@ -1,8 +1,8 @@
 package com.example.losram
 
+import android.content.Intent
 import android.app.Activity
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,7 +25,7 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
     private val titulo_seccionAdapter by lazy { Titulo_seccionAdapter() }
     private val nombres = listOf<Nombre_tiendas>(Nombre_tiendas.SOLMANIA,Nombre_tiendas.WHAPA,Nombre_tiendas.SOMOS,Nombre_tiendas.BIG_SUR)
 
-  //  private val nom by lazy { PrendasAdapter(nombres){navegar(it)} }
+    //  private val nom by lazy { PrendasAdapter(nombres){navegar(it)} }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_tiendas)
@@ -43,13 +43,13 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
     private lateinit var filtro : Nombre_secciones
 
     val general : List<Tiendas>  = listOf  (Tiendas(
-    id = 1,
-    nombreTienda = Nombre_tiendas.CLEMENTINE,
-    direccion = "Calle 18 de calacoto",
-    puntuacionTienda = 4.3,
-    estadoDeTienda = "14:00 a 18:00",
-    tipo = listOf(Nombre_secciones.FORMAL),
-    imagenPrenda = R.drawable.clementine_logo
+        id = 1,
+        nombreTienda = Nombre_tiendas.CLEMENTINE,
+        direccion = "Calle 18 de calacoto",
+        puntuacionTienda = 4.3,
+        estadoDeTienda = "14:00 a 18:00",
+        tipo = listOf(Nombre_secciones.FORMAL),
+        imagenPrenda = R.drawable.clementine_logo
     ),Tiendas(
         id = 2,
         nombreTienda = Nombre_tiendas.MANGO,
@@ -409,23 +409,23 @@ class RecyclerViewTiendasActivity : AppCompatActivity() {
 //            texto_titulo_seccion = "Para Dormir"
 //        )
 
-      //  listTitulos.add(deportivo)
-       // listTitulos.add(formal)
-      //  listTitulos.add(de_diario)
- /*       listTitulos.add(ropa_interior)
-        listTitulos.add(tropical)
-        listTitulos.add(para_dormir)
-        */
+        //  listTitulos.add(deportivo)
+        // listTitulos.add(formal)
+        //  listTitulos.add(de_diario)
+        /*       listTitulos.add(ropa_interior)
+               listTitulos.add(tropical)
+               listTitulos.add(para_dormir)
+               */
 //        titulo_seccionAdapter.addTitulo(listTitulos)
 
         // tiendasAdapter.addTiendas(tiendas,Nombre_secciones.FORMAL)
-tiendasAdapter.addTiendas(general.filter {
-    it.tipo.contains(filtro)
-})
-/*        val tiendas_deportivas =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DEPORTIVO)
-        val tiendas_tropical =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.TROPICAL)
-        val tiendas_ropa_interior =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.ROPA_INTERIOR)
-        val tiendas_para_dormir =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.PARA_DORMIR)*/
+        tiendasAdapter.addTiendas(general.filter {
+            it.tipo.contains(filtro)
+        })
+        /*        val tiendas_deportivas =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.DEPORTIVO)
+                val tiendas_tropical =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.TROPICAL)
+                val tiendas_ropa_interior =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.ROPA_INTERIOR)
+                val tiendas_para_dormir =  tiendasAdapter.addTiendas(tiendas,Nombre_secciones.PARA_DORMIR)*/
 
         binding.recyclerNombreSeccionTienda.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
@@ -437,9 +437,9 @@ tiendasAdapter.addTiendas(general.filter {
             adapter = tiendasAdapter
         }
         tiendasAdapter.notifyDataSetChanged()
-/*       binding.textview.setOnClic,,,{
-            navegar(Nombre_tiendas.BIG_SUR,)
-        }*/
+        /*       binding.textview.setOnClic,,,{
+                    navegar(Nombre_tiendas.BIG_SUR,)
+                }*/
 
     }
 

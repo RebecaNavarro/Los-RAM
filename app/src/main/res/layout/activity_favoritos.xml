@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoritosActivity"
-    android:background="#F8F5E6">
+    android:background="@color/perla">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -47,14 +47,14 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_tiendas1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/recycler_tiendas1"
-                app:layout_constraintTop_toBottomOf="@+id/recycler_nombre_seccion_tienda"
                 app:layout_constraintLeft_toLeftOf="parent"
-                tools:listitem="@layout/item_favoritos">
-            </androidx.recyclerview.widget.RecyclerView>
+                app:layout_constraintTop_toBottomOf="@+id/recycler_nombre_seccion_tienda"
+                tools:listitem="@layout/item_favoritos"></androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
