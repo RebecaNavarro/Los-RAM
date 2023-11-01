@@ -1,5 +1,8 @@
 package com.example.losram
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +15,9 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecyclerViewPrendasBinding
     private val prendasAdapter by lazy { PrendasAdapter() }
+
+    val context: Context = this
+    val activity: Activity = this
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_prendas)
@@ -20,6 +26,13 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
         filtro = intent.getSerializableExtra("Key_Tienda") as Nombre_tiendas
 
         iniciarRecyclerView()
+
+        binding.botonatras.setOnClickListener{
+            val intent: Intent = Intent(context, RecyclerViewTiendasActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
     private lateinit var filtro: Nombre_tiendas
 
@@ -1543,6 +1556,8 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
                 prendasfiltradas.add(prenda)
 
             }
+
+
         }
         prendasAdapter.addPrendas(prendasfiltradas)
 
@@ -1555,6 +1570,8 @@ class RecyclerViewPrendasActivity : AppCompatActivity() {
 
         binding.recyclerPrendas.adapter = prendasAdapter
         //la lista filtrada al adapter de tienda?
+
+
     }
 
 }

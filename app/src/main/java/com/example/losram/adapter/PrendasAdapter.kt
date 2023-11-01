@@ -38,6 +38,7 @@ class PrendasAdapter : RecyclerView.Adapter<PrendasAdapter.PrendasAdapterViewHol
                     binding.TextViewPrecio.text = data.precio.toString()
                     binding.TextViewDisponibilidad.text = data.disponibilidad
                     binding.imagenDeLista.setImageResource(data.imagenPrenda)
+
                 }
 
             }
