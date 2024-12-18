@@ -16,7 +16,6 @@ class CarritoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var cantidad: Int = 1
-//        var precio: Int = cantidad*
 
         fun binding(data: Carrito) {
 
