@@ -23,11 +23,6 @@ class PantallaPagarActivity : AppCompatActivity() {
         binding = ActivityPantallaPagarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.botonatras.setOnClickListener {
-//            val intent: Intent = Intent(context, PantallaDeInicioActivity::class.java)
-//            startActivity(intent)
-//        } //al carrito
-
         binding.botonenter.setOnClickListener{
             val intent2 :Intent = Intent(context, GraciasActivity::class.java)
             startActivity(intent2)
